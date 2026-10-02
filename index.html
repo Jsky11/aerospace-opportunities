@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Aerospace and mechanical engineering opportunity board for a Nigerian undergraduate — open programs, deadlines, and apply links." />
+  <title>Aerospace Opportunity Board</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">◇</span>
+        <div>
+          <p class="brand-kicker">Nigerian Mech Eng · 300 level</p>
+          <h1>Aerospace Opportunity Board</h1>
+        </div>
+      </div>
+      <div class="header-meta">
+        <span class="pill" id="last-updated">Updated —</span>
+        <a class="btn btn-ghost" href="https://github.com/Jsky11/aerospace-opportunities" target="_blank" rel="noopener">Source</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero card">
+      <div class="hero-copy">
+        <h2>What needs action this week</h2>
+        <p id="summary-text">Loading briefing…</p>
+      </div>
+      <div class="hero-stats" id="hero-stats"></div>
+    </section>
+
+    <section class="toolbar">
+      <div class="filters" role="tablist" aria-label="Filter opportunities">
+        <button class="filter active" data-filter="all" type="button">All</button>
+        <button class="filter" data-filter="urgent" type="button">Urgent</button>
+        <button class="filter" data-filter="open" type="button">Open now</button>
+        <button class="filter" data-filter="forecast" type="button">Forecast</button>
+        <button class="filter" data-filter="excluded" type="button">Excluded</button>
+      </div>
+      <label class="search-wrap">
+        <span class="sr-only">Search</span>
+        <input type="search" id="search" placeholder="Search destination, field, host…" autocomplete="off" />
+      </label>
+    </section>
+
+    <section class="timeline card" aria-labelledby="timeline-title">
+      <div class="section-head">
+        <h2 id="timeline-title">Deadline strip</h2>
+        <p>Next hard dates on the calendar (Africa/Lagos).</p>
+      </div>
+      <div class="timeline-track" id="timeline"></div>
+    </section>
+
+    <section aria-labelledby="ops-title">
+      <div class="section-head">
+        <h2 id="ops-title">Opportunities</h2>
+        <p id="result-count"></p>
+      </div>
+      <div class="grid" id="cards"></div>
+    </section>
+
+    <section class="card checklist" aria-labelledby="next-title">
+      <div class="section-head">
+        <h2 id="next-title">Next 30 days</h2>
+        <p>Concrete sequence for a 300-level mechanical student aiming at aerospace exposure.</p>
+      </div>
+      <ol class="next-list" id="next-steps"></ol>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Verified from official program pages where available. Re-check eligibility before you pay any fee. Not affiliated with EPFL, KAUST, IAESTE, CERN, or A*STAR.</p>
+      <p>Built for personal daily review · <a href="https://github.com/Jsky11/aerospace-opportunities">Jsky11/aerospace-opportunities</a></p>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
