@@ -1,6 +1,6 @@
 # AI Automation Guidelines
 
-If an AI (like Grok) is updating this opportunity board, you must provide it with strict instructions to ensure it doesn't break the layout or functionality. 
+If an AI (like Grok) is updating this opportunity board, you must provide it with strict instructions to ensure it doesn't break the layout or functionality.
 
 Feed the following prompt to the AI automation system:
 
@@ -65,22 +65,31 @@ Every item in the `opportunities` and `excluded` arrays must possess EXACTLY the
 
 ### 4. Deadlines Schema
 ```javascript
-{ 
+{
   date: "YYYY-MM-DD", // MUST be ISO format for the JS date parser to work
-  label: "Short title", 
-  hint: "Short description", 
+  label: "Short title",
+  hint: "Short description",
   status: "open" // Allowed statuses
 }
 ```
 
 ### 5. Next Steps Schema
 ```javascript
-{ 
-  when: "Timeframe (e.g., 'This month')", 
-  what: "Actionable description" 
+{
+  when: "Timeframe (e.g., 'This month')",
+  what: "Actionable description"
 }
 ```
 
 ### Formatting Rules
 - **No HTML Injection**: Do not write HTML tags in the JSON values. The UI automatically renders and escapes the strings.
 - **Valid JavaScript**: The output must be perfectly valid JavaScript, terminating with a semicolon `};`. Do not output raw JSON, ensure it is assigned to `window.BOARD`.
+
+### Google Drive (briefing Word files)
+Every run that produces a `.docx` briefing must upload it to this folder only:
+
+- **Folder name:** Aerospace Opportunity Briefings
+- **folder_id:** `1K-FPzL6is3rXBhlMe-IWux02Q_FkSvy_`
+- **Link:** https://drive.google.com/drive/folders/1K-FPzL6is3rXBhlMe-IWux02Q_FkSvy_
+
+When calling `google_drive_upload_artifact`, always pass `folder_id: "1K-FPzL6is3rXBhlMe-IWux02Q_FkSvy_"`. Do not leave briefing files in Drive root.
