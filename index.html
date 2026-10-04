@@ -48,10 +48,16 @@
         <button class="filter" data-filter="forecast" type="button">Forecast</button>
         <button class="filter" data-filter="excluded" type="button">Excluded</button>
       </div>
-      <label class="search-wrap">
-        <span class="sr-only">Search</span>
-        <input type="search" id="search" placeholder="Search destination, field, host…" autocomplete="off" />
-      </label>
+            <div class="search-sort-wrap" style="display: flex; gap: 0.5rem; width: 100%; max-width: 480px;">
+        <label class="search-wrap" style="flex: 1; max-width: none;">
+          <span class="sr-only">Search</span>
+          <input type="search" id="search" placeholder="Search destination, field, host…" autocomplete="off" />
+        </label>
+        <select id="sort-select" class="filter" aria-label="Sort by" style="min-height: 48px; border-radius: 12px; padding: 0 1rem; flex-shrink: 0;">
+          <option value="default">Default Order</option>
+          <option value="deadline">Deadline: Soonest</option>
+        </select>
+      </div>
     </section>
 
     <section class="timeline card" aria-labelledby="timeline-title">
@@ -59,7 +65,15 @@
         <h2 id="timeline-title">Deadline strip</h2>
         <p>Next hard dates on the calendar (Africa/Lagos).</p>
       </div>
-      <div class="timeline-track" id="timeline"></div>
+            <div class="timeline-container" style="position: relative; display: flex; align-items: center;">
+        <button class="btn btn-ghost timeline-nav left" aria-label="Scroll left" style="display: none; position: absolute; left: -1rem; z-index: 10; padding: 0.5rem; min-height: 0; border-radius: 50%; box-shadow: var(--shadow);">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <div class="timeline-track" id="timeline"></div>
+        <button class="btn btn-ghost timeline-nav right" aria-label="Scroll right" style="display: none; position: absolute; right: -1rem; z-index: 10; padding: 0.5rem; min-height: 0; border-radius: 50%; box-shadow: var(--shadow);">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+      </div>
     </section>
 
     <section aria-labelledby="ops-title">
