@@ -179,5 +179,36 @@
     return escapeHtml(str).replace(/'/g, "&#39;");
   }
 
+  // Theme Toggling
+  const themeToggle = document.getElementById("theme-toggle");
+  const iconMoon = document.getElementById("theme-icon-moon");
+  const iconSun = document.getElementById("theme-icon-sun");
+
+  function setTheme(isDark) {
+    if (isDark) {
+      document.documentElement.setAttribute("data-theme", "dark");
+      iconMoon.style.display = "none";
+      iconSun.style.display = "block";
+    } else {
+      document.documentElement.removeAttribute("data-theme");
+      iconMoon.style.display = "block";
+      iconSun.style.display = "none";
+    }
+  }
+
+  // Initialize theme from local storage or OS preference
+  const savedTheme = localStorage.getItem("theme");
+  const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  let isDarkMode = savedTheme === "dark" || (!savedTheme && prefersDark);
+  setTheme(isDarkMode);
+
+  if (themeToggle) {
+    themeToggle.addEventListener("click", () => {
+      isDarkMode = !isDarkMode;
+      localStorage.setItem("theme", isDarkMode ? "dark" : "light");
+      setTheme(isDarkMode);
+    });
+  }
+
   render();
 })();

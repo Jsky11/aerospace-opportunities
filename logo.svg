@@ -67,7 +67,7 @@
   <rect
      width="512"
      height="512"
-     rx="120"
+     rx="0"
      fill="url(#bgGrad)"
      id="rect5" />
   <circle
