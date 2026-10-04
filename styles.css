@@ -35,6 +35,7 @@
 
 html {
   -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -111,16 +112,12 @@ a:hover {
 }
 
 .brand-mark {
-  display: grid;
-  place-items: center;
   width: 3rem;
   height: 3rem;
   border-radius: 12px;
-  background: var(--accent-gradient);
-  color: #fff;
-  font-size: 1.1rem;
-  font-weight: 700;
-  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.4);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+  flex-shrink: 0;
 }
 
 .brand-kicker {
@@ -212,6 +209,7 @@ main.container {
   padding-top: 2rem;
   padding-bottom: 4rem;
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 2rem;
 }
 
