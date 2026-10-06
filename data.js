@@ -1,21 +1,24 @@
 window.BOARD = {
-  updated: "2026-10-05",
+  updated: "2026-10-06",
   timezone: "Africa/Lagos",
   profile: "Nigerian Mechanical Engineering undergraduate, 300 level, aerospace / space focus",
-  summary: "EPFL E3 opens 12 October and closes 1 November 2026. AIAA Design/Build/Fly proposals open 15-31 October (fly-off not funded). Keep KAUST VSRP and IAESTE moving. NASA and ESA stay closed.",
-  stats: { urgent: 3, open: 2, forecast: 9, excluded: 12 },
+  summary: "EPFL E3 opens 12 October and closes 1 November 2026. AIAA DBF proposals open 15-31 October (fly-off unfunded). GEF 2026 is closed. Keep KAUST VSRP and IAESTE moving.",
+  stats: { urgent: 2, open: 2, forecast: 11, excluded: 16 },
   deadlines: [
     { date: "2026-10-12", label: "EPFL E3 opens", hint: "Submit in week one", status: "urgent" },
     { date: "2026-10-15", label: "AIAA DBF opens", hint: "Proposal window; fly-off unfunded", status: "urgent" },
-    { date: "2026-10-15", label: "GEF bridge check", hint: "Apply page showed closed", status: "urgent" },
     { date: "2026-10-16", label: "KAUST VSRP file", hint: "Rolling; passport + faculty email", status: "open" },
     { date: "2026-10-31", label: "AIAA DBF close", hint: "Before 17:00 ET", status: "urgent" },
     { date: "2026-11-01", label: "EPFL E3 deadline", hint: "Summer 2027 research", status: "urgent" },
     { date: "2026-11-01", label: "Caltech SURF opens", hint: "Campus track only for internationals", status: "forecast" },
+    { date: "2026-11-08", label: "IEEE WIE close", hint: "Excluded unless 2 years WIE", status: "excluded" },
+    { date: "2026-11-16", label: "NASA ORBIT close", hint: "US enrolment only", status: "excluded" },
     { date: "2027-01-30", label: "IAF ESL forecast", hint: "Space congress grant", status: "forecast" },
     { date: "2027-01-31", label: "CERN Summer forecast", hint: "Need 6 semesters by summer", status: "forecast" },
     { date: "2027-03-01", label: "Caltech SURF close", hint: "Confirm on SFP site", status: "forecast" },
-    { date: "2027-05-15", label: "AfSA workshop watch", hint: "2026 call closed 15 May", status: "forecast" }
+    { date: "2027-05-01", label: "Cars4Mars watch", hint: "2026 final already held", status: "forecast" },
+    { date: "2027-05-15", label: "AfSA workshop watch", hint: "2026 call closed 15 May", status: "forecast" },
+    { date: "2027-09-01", label: "GEF bridge window", hint: "2026 closed 30 Sep", status: "forecast" }
   ],
   opportunities: [
     {
@@ -47,21 +50,6 @@ window.BOARD = {
       linkLabel: "AIAA DBF page",
       aerospace: "Direct aircraft design, structures, propulsion, and flight test.",
       next: "Enter only if a campus team can file a proposal in two weeks. Do not pay an agent."
-    },
-    {
-      id: "gef-bridge",
-      name: "Gabriel Ezenri Foundation (bridge funding)",
-      status: "urgent",
-      type: "Domestic bridge scholarship",
-      destination: "Nigeria (fee cash only)",
-      level: "Nigerian undergraduates",
-      covers: "Up to N500,000 for the session if awarded. Use only for passport, visa, or IAESTE fees.",
-      eligibility: "Nigerian students at accredited institutions. Continuing students often need CGPA 3.5/5. No application fee.",
-      deadline: "How-to-apply lists 15 Oct 2026; apply page showed closed on 5 Oct 2026",
-      link: "https://gabrielezenrifoundation.org/apply/how-to-apply",
-      linkLabel: "GEF how to apply",
-      aerospace: "Not aerospace. Bridge cash only.",
-      next: "Open the official form yourself. If closed, skip. Never pay an agent."
     },
     {
       id: "kaust-vsrp",
@@ -116,7 +104,7 @@ window.BOARD = {
       destination: "CERN, Geneva, Switzerland",
       level: "Bachelor's or master's; at least 6 semesters by summer start",
       covers: "94 CHF/day, insurance, housing help, possible travel support; 8-13 weeks.",
-      eligibility: "All nationalities (US/Canada/Japan use national routes). Engineering eligible. Still enrolled. No open summer posts on 5 Oct 2026.",
+      eligibility: "All nationalities (US/Canada/Japan use national routes). Engineering eligible. Still enrolled. No open summer posts on 6 Oct 2026.",
       deadline: "Forecast close end of January 2027 - confirm on careers.cern",
       link: "https://careers.cern/programmes/summer-studentship/",
       linkLabel: "CERN Summer Studentship",
@@ -227,6 +215,36 @@ window.BOARD = {
       linkLabel: "CSC Master's scholarships",
       aerospace: "Post-graduation route into UK aerospace / mechanical master's programmes.",
       next: "File under 2028/29 targets after graduation."
+    },
+    {
+      id: "gef-bridge",
+      name: "Gabriel Ezenri Foundation (bridge funding)",
+      status: "forecast",
+      type: "Domestic bridge scholarship",
+      destination: "Nigeria (fee cash only)",
+      level: "Nigerian undergraduates",
+      covers: "Up to N500,000 for the session if awarded. Use only for passport, visa, or IAESTE fees.",
+      eligibility: "Nigerian students at accredited institutions. Continuing students need CGPA 3.5/5. No application fee.",
+      deadline: "2026 window closed 30 Sep 2026. Forecast 1-30 Sep 2027",
+      link: "https://gabrielezenrifoundation.org/apply",
+      linkLabel: "GEF apply page",
+      aerospace: "Not aerospace. Bridge cash only.",
+      next: "Do not chase the closed 2026 form. Never pay an agent."
+    },
+    {
+      id: "cars4mars",
+      name: "Cars4Mars African Rover Challenge",
+      status: "forecast",
+      type: "Rover competition",
+      destination: "Africa (2026 final at SANSA, South Africa)",
+      level: "University and college students, plus schools",
+      covers: "Competition slot. 2026 travel funding was not a published full package.",
+      eligibility: "African students. 2026 Mars-stage final was held 25 Sep 2026. Next call not posted.",
+      deadline: "Forecast spring 2027 watch",
+      link: "https://www.sansa.org.za/2026/09/africas-young-innovators-test-mars-rovers-at-sansa/",
+      linkLabel: "SANSA 2026 final report",
+      aerospace: "Hands-on rover design, mobility, and Mars-yard testing.",
+      next: "Watch for the 2027 call. Do not pay an agent for a closed season."
     }
   ],
   excluded: [
@@ -244,6 +262,21 @@ window.BOARD = {
       linkLabel: "IEEE AESS",
       aerospace: "Excluded by field filter.",
       next: "Skip."
+    },
+    {
+      id: "ieee-wie",
+      name: "IEEE WIE International Scholarship",
+      status: "excluded",
+      type: "Cash scholarship",
+      destination: "No host placement",
+      level: "Engineering undergrad after 2 years",
+      covers: "USD 2,500 and a certificate. Not travel.",
+      eligibility: "Needs two consecutive years of IEEE WIE student membership and about 3.7/4.0. Women-in-engineering award.",
+      deadline: "8 Nov 2026 (skip unless already a 2-year WIE member)",
+      link: "https://wie.ieee.org/grants-scholarships/international-scholarship/",
+      linkLabel: "IEEE WIE scholarship",
+      aerospace: "Not a placement. Membership lock.",
+      next: "Skip unless both membership conditions are already true."
     },
     {
       id: "nasa-ostem",
@@ -276,6 +309,21 @@ window.BOARD = {
       next: "Skip."
     },
     {
+      id: "nasa-orbit",
+      name: "NASA ORBIT 2026-27 challenge",
+      status: "excluded",
+      type: "Student challenge",
+      destination: "United States",
+      level: "Students enrolled at a US college",
+      covers: "Prize funding up to USD 500,000 across teams",
+      eligibility: "Foreign citizens may join only if enrolled and residing in the US. Not open from a Nigerian university.",
+      deadline: "Registration to 16 Nov 2026 (ineligible)",
+      link: "https://nasaorbit.org/",
+      linkLabel: "NASA ORBIT",
+      aerospace: "Space track exists, blocked by enrolment rule.",
+      next: "Skip."
+    },
+    {
       id: "esa-ygt",
       name: "ESA internships and Young Graduate Trainee",
       status: "excluded",
@@ -288,6 +336,21 @@ window.BOARD = {
       link: "https://www.esa.int/About_Us/Careers_at_ESA/Student_internships_frequently_asked_questions",
       linkLabel: "ESA internship FAQ",
       aerospace: "Blocked by nationality.",
+      next: "Skip."
+    },
+    {
+      id: "esa-cansat",
+      name: "ESA CanSat 2026-27",
+      status: "excluded",
+      type: "School competition",
+      destination: "Europe / Canada national rounds",
+      level: "Secondary school, age 14-19",
+      covers: "National competition; summit for winners only",
+      eligibility: "Post-secondary students are explicitly ineligible.",
+      deadline: "N/A for this profile",
+      link: "https://www.esa.int/Education/CanSat/CanSat_2026-2027_Challenge_your_students_to_build_a_can-sized_satellite",
+      linkLabel: "ESA CanSat",
+      aerospace: "School-only. Use UNISEC instead.",
       next: "Skip."
     },
     {
@@ -403,12 +466,27 @@ window.BOARD = {
       destination: "Nigeria",
       level: "Varies",
       covers: "Tuition or stipend local only",
-      eligibility: "No abroad exposure. Julius Berger, NIPES, Indomie, and STEM to Space 2026 (closed 2 Apr 2026) are not placements.",
+      eligibility: "No abroad exposure. Julius Berger, NIPES, Indomie, Carewave ASPIRE (9 Nov 2026), and STEM to Space 2026 (closed 2 Apr 2026) are not placements.",
       deadline: "Various",
       link: "https://iaeste.ng/index.php/students/",
       linkLabel: "Use only as fee bridge",
       aerospace: "Excluded by travel filter except passport, visa, or IAESTE fee cash.",
       next: "Skip unless the cash pays passport, visa, or IAESTE costs."
+    },
+    {
+      id: "imeche-ug",
+      name: "IMechE undergraduate scholarship",
+      status: "excluded",
+      type: "Scholarship",
+      destination: "United Kingdom",
+      level: "UK residents starting an accredited degree",
+      covers: "Up to GBP 8,000 over the degree",
+      eligibility: "UK residents only. Nigeria hardship grants go through selected universities, not a direct international application.",
+      deadline: "30 Jun 2026 (ineligible)",
+      link: "https://www.imeche.org/careers-education/scholarships-and-awards/undergraduate-and-apprentice-awards/scholarships",
+      linkLabel: "IMechE scholarships",
+      aerospace: "Blocked by residency.",
+      next: "Skip."
     }
   ],
   nextSteps: [
@@ -417,7 +495,6 @@ window.BOARD = {
     { when: "15-31 October", what: "AIAA DBF only if a real team can file a proposal. Otherwise skip." },
     { when: "This month", what: "Start KAUST VSRP file; email one mechanical/fluids faculty; check passport validity." },
     { when: "This month", what: "Email IAESTE Nigeria and ask which mechanical offers are live." },
-    { when: "15 October", what: "Open the Gabriel Ezenri form yourself. If closed, do not chase agents." },
-    { when: "Always", what: "Ignore paid agents offering NASA, ESA, or DAAD submissions for this profile." }
+    { when: "Always", what: "Ignore paid agents. GEF 2026 is closed. NASA, ESA, and DAAD RISE are blocked for this profile." }
   ]
 };
