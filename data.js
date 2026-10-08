@@ -1,9 +1,9 @@
 window.BOARD = {
-  updated: "2026-10-07",
+  updated: "2026-10-08",
   timezone: "Africa/Lagos",
   profile: "Nigerian Mechanical Engineering undergraduate, 300 level, aerospace / space focus",
-  summary: "EPFL E3 opens 12 October and closes 1 November 2026. AIAA DBF proposals open 15-31 October (fly-off unfunded). SG[Nigeria] opened 6 October but pays an Abuja ticket only.",
-  stats: { urgent: 2, open: 2, forecast: 11, excluded: 16 },
+  summary: "EPFL E3 opens 12 October and closes 1 November 2026. AIAA DBF proposals open 15-31 October (fly-off unfunded). KAUST VSRP and IAESTE remain the live funded routes.",
+  stats: { urgent: 2, open: 2, forecast: 13, excluded: 17 },
   deadlines: [
     { date: "2026-10-12", label: "EPFL E3 opens", hint: "Submit in week one", status: "urgent" },
     { date: "2026-10-15", label: "AIAA DBF opens", hint: "Proposal window; fly-off unfunded", status: "urgent" },
@@ -13,11 +13,12 @@ window.BOARD = {
     { date: "2026-11-01", label: "EPFL E3 deadline", hint: "Summer 2027 research", status: "urgent" },
     { date: "2026-11-01", label: "Caltech SURF opens", hint: "Campus track only for internationals", status: "forecast" },
     { date: "2026-11-08", label: "IEEE WIE close", hint: "Excluded unless 2 years WIE", status: "excluded" },
+    { date: "2026-11-15", label: "Amelia Earhart", hint: "Doctoral women only", status: "excluded" },
     { date: "2026-11-16", label: "NASA ORBIT close", hint: "US enrolment only", status: "excluded" },
+    { date: "2026-12-01", label: "TU Delft van Effen", hint: "MSc only; after degree", status: "forecast" },
     { date: "2027-01-30", label: "IAF ESL forecast", hint: "Space congress grant", status: "forecast" },
     { date: "2027-01-31", label: "CERN Summer forecast", hint: "Need 6 semesters by summer", status: "forecast" },
     { date: "2027-03-01", label: "Caltech SURF close", hint: "Confirm on SFP site", status: "forecast" },
-    { date: "2027-05-01", label: "Cars4Mars watch", hint: "2026 final already held", status: "forecast" },
     { date: "2027-05-15", label: "AfSA workshop watch", hint: "2026 call closed 15 May", status: "forecast" },
     { date: "2027-09-01", label: "GEF bridge window", hint: "2026 closed 30 Sep", status: "forecast" }
   ],
@@ -62,8 +63,8 @@ window.BOARD = {
       covers: "USD 1,000/month, private room, visa and airfare, health insurance, 3-6 months.",
       eligibility: "All nationalities. GPA about 3.5/4.0. English. Transcript, recommendation, valid passport.",
       deadline: "Rolling (arrival at least 6 weeks after submission)",
-      link: "https://kaust-vsrp.azurewebsites.net/about-vsrp",
-      linkLabel: "Open KAUST VSRP",
+      link: "https://admissions.kaust.edu.sa/study/internships",
+      linkLabel: "Open KAUST internships",
       aerospace: "Fluids, combustion, composites, thermal systems - mechanical core of propulsion and airframes.",
       next: "Pick a Mechanical / PSE faculty project, email a short research note, then submit."
     },
@@ -158,6 +159,21 @@ window.BOARD = {
       next: "Keep a one-page CV and transcript ready for a spring 2027 call."
     },
     {
+      id: "afsa-eossd",
+      name: "AfSA / ESA Earth Observation Satellite System Design",
+      status: "forecast",
+      type: "Training course",
+      destination: "ESEC-Galaxia, Belgium, plus online week",
+      level: "African BSc, MSc, or PhD in engineering or science, age 18-35",
+      covers: "2026 course was a funded training week. Next-cycle funding not yet published.",
+      eligibility: "African nationals with maths and physics. 2026 deadline was 19 June 2026 and has passed.",
+      deadline: "Next cycle not announced - watch spring 2027",
+      link: "https://africanspaceagency.org/call-for-applications-earth-observation-satellite-system-design-training-course-2026/",
+      linkLabel: "AfSA EOSSD page",
+      aerospace: "Satellite system design with ESA Academy trainers.",
+      next: "Keep endorsement letter and transcript ready for a spring 2027 call."
+    },
+    {
       id: "unisec",
       name: "UNISEC Mission Idea Contest / CLTP",
       status: "forecast",
@@ -201,6 +217,21 @@ window.BOARD = {
       linkLabel: "Caltech SURF",
       aerospace: "GALCIT and fluids/structures labs are the aerospace bridge. JPL is blocked.",
       next: "Identify a campus mentor in November. Do not apply to the JPL track."
+    },
+    {
+      id: "tudelft-effen",
+      name: "TU Delft Justus and Louise van Effen Scholarship",
+      status: "forecast",
+      type: "Postgraduate scholarship",
+      destination: "TU Delft, Netherlands",
+      level: "Requires completed bachelor's for a 2-year MSc",
+      covers: "Full first-year tuition for a regular MSc, including Aerospace Engineering. Confirm living allowance on the official page.",
+      eligibility: "International applicants with a completed relevant degree. Not open to a current 300-level student this cycle.",
+      deadline: "1 Dec 2026, 23:59 CET for 2027-2029 MSc applicants",
+      link: "https://www.tudelft.nl/onderwijs/studievoorlichting/praktische-zaken/scholarships",
+      linkLabel: "TU Delft scholarships",
+      aerospace: "Direct route into the TU Delft Aerospace Engineering MSc after graduation.",
+      next: "File under post-graduation targets. Do not apply before the degree is complete."
     },
     {
       id: "commonwealth",
@@ -337,21 +368,21 @@ window.BOARD = {
       link: "https://www.esa.int/About_Us/Careers_at_ESA/Student_internships_frequently_asked_questions",
       linkLabel: "ESA internship FAQ",
       aerospace: "Blocked by nationality.",
-      next: "Skip."
+      next: "Skip. Use AfSA partnership calls instead."
     },
     {
       id: "esa-cansat",
-      name: "ESA CanSat 2026-27",
+      name: "ESA CanSat",
       status: "excluded",
-      type: "School competition",
-      destination: "Europe / Canada national rounds",
-      level: "Secondary school, age 14-19",
-      covers: "National competition; summit for winners only",
-      eligibility: "Post-secondary students are explicitly ineligible.",
-      deadline: "N/A for this profile",
-      link: "https://www.esa.int/Education/CanSat/CanSat_2026-2027_Challenge_your_students_to_build_a_can-sized_satellite",
+      type: "Student competition",
+      destination: "Europe",
+      level: "ESA member-state student teams",
+      covers: "Team competition support for eligible states",
+      eligibility: "Nigerian university teams are not eligible on the member-state call.",
+      deadline: "N/A",
+      link: "https://www.esa.int/Education/CanSat",
       linkLabel: "ESA CanSat",
-      aerospace: "School-only. Use UNISEC instead.",
+      aerospace: "Blocked by nationality.",
       next: "Skip."
     },
     {
@@ -426,33 +457,33 @@ window.BOARD = {
       deadline: "Do not treat as funded",
       link: "https://www.vki.ac.be/",
       linkLabel: "VKI",
-      aerospace: "Fluid dynamics content, but not a funded placement.",
-      next: "Skip."
+      aerospace: "Fluids content exists, but it is not a funded placement.",
+      next: "Skip unless a funded seat is published."
     },
     {
-      id: "chevening",
-      name: "Chevening Scholarship",
+      id: "zonta-ae",
+      name: "Zonta Amelia Earhart Fellowship",
       status: "excluded",
-      type: "Master's scholarship",
-      destination: "United Kingdom",
-      level: "Completed degree plus work experience",
-      covers: "Funded master's",
-      eligibility: "Not open to current undergraduates.",
-      deadline: "Not this cycle",
-      link: "https://www.chevening.org/",
-      linkLabel: "Chevening",
-      aerospace: "Post-degree route only.",
-      next: "Skip until after graduation and work experience."
+      type: "Doctoral fellowship",
+      destination: "No host placement",
+      level: "Women in PhD aerospace or space science",
+      covers: "About USD 12,000 for doctoral research",
+      eligibility: "Not an undergraduate award. Women only, after at least one doctoral year.",
+      deadline: "15 Nov 2026 reported for 2027 fellows (ineligible level)",
+      link: "https://www.zonta.org/Web/Programs/Education/Amelia_Earhart_Fellowship",
+      linkLabel: "Amelia Earhart Fellowship",
+      aerospace: "Direct aerospace, blocked by degree level.",
+      next: "Skip until doctoral study."
     },
     {
       id: "sg-nigeria",
       name: "SG[Nigeria] x ASEIC 2026",
       status: "excluded",
-      type: "Conference ticket",
-      destination: "NASRDA, Abuja, Nigeria",
-      level: "Students and young professionals 18-35",
-      covers: "Full access pass only. Travel, accommodation, and visa are not paid.",
-      eligibility: "Opened 6 Oct 2026. SGAC members. Must attend 23-27 Nov 2026. Excluded by the no-travel filter.",
+      type: "Local conference pass",
+      destination: "Abuja, Nigeria",
+      level: "SGAC members, students and young professionals",
+      covers: "Delegate pass only. Travel, accommodation, and visa are not paid.",
+      eligibility: "Opened 6 Oct 2026. Must attend 23-27 Nov 2026. Excluded by the no-travel filter.",
       deadline: "23 Oct 2026, 23:59 WAT",
       link: "https://spacegeneration.org/sgnigeria2026",
       linkLabel: "SG Nigeria page",
@@ -467,7 +498,7 @@ window.BOARD = {
       destination: "Nigeria",
       level: "Varies",
       covers: "Tuition or stipend local only",
-      eligibility: "No abroad exposure. Julius Berger, NIPES, Indomie, Carewave ASPIRE, and STEM to Space 2026 (closed 2 Apr 2026) are not placements.",
+      eligibility: "No abroad exposure. Julius Berger, Indomie, Carewave, and STEM to Space 2026 (closed 2 Apr 2026) are not placements. Boeing/FASESA Pathways to Space 2026 was a high-school cohort.",
       deadline: "Various",
       link: "https://iaeste.ng/index.php/students/",
       linkLabel: "Use only as fee bridge",
@@ -488,6 +519,21 @@ window.BOARD = {
       linkLabel: "IMechE scholarships",
       aerospace: "Blocked by residency.",
       next: "Skip."
+    },
+    {
+      id: "arc-hs",
+      name: "American Rocketry Challenge",
+      status: "excluded",
+      type: "High-school competition",
+      destination: "United States",
+      level: "Secondary-school teams",
+      covers: "Contest entry; travel not funded for this profile",
+      eligibility: "High-school challenge. 2027 registration closes 6 Dec 2026. Not an undergraduate call.",
+      deadline: "6 Dec 2026 (wrong level)",
+      link: "https://rocketcontest.org/",
+      linkLabel: "ARC",
+      aerospace: "Rocketry exists, blocked by school level.",
+      next: "Skip."
     }
   ],
   nextSteps: [
@@ -496,6 +542,6 @@ window.BOARD = {
     { when: "15-31 October", what: "AIAA DBF only if a real team can file a proposal. Otherwise skip." },
     { when: "This month", what: "Start KAUST VSRP file; email one mechanical/fluids faculty; check passport validity." },
     { when: "This month", what: "Email IAESTE Nigeria and ask which mechanical offers are live." },
-    { when: "Always", what: "Ignore paid agents. SG Nigeria is ticket-only. NASA, ESA, and DAAD RISE are blocked." }
+    { when: "Always", what: "Ignore paid agents. SG Nigeria is ticket-only. NASA, ESA direct calls, and DAAD RISE are blocked." }
   ]
 };
