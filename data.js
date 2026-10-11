@@ -2,25 +2,41 @@ window.BOARD = {
   updated: "2026-10-11",
   timezone: "Africa/Lagos",
   profile: "Nigerian Mechanical Engineering undergraduate, 300 level, aerospace / space focus",
-  summary: "AIAA scholarships open 15 Oct (Denise Ponchak for non-US). Open Doors portfolio closes 1 Nov. IEEE WIE (female) and Carewave close early Nov. IAESTE remains ongoing. Verify Gabriel Ezenri status immediately. Focus on funded travel and bridge funding.",
-  stats: { urgent: 2, open: 4, forecast: 2, excluded: 5 },
+  summary: "INTERNATIONAL: EPFL E3 portal opens 12 Oct (closes 1 Nov) — strong Mech match in Switzerland. AIAA (Denise Ponchak) opens 15 Oct. Open Doors 1 Nov. IEEE WIE 8 Nov. IAESTE ongoing. LOCAL: Gabriel (verify), Carewave 9 Nov. Cyclic programmes kept as forecast, not removed.",
+  stats: { urgent: 3, open: 4, forecast: 3, excluded: 4 },
   deadlines: [
+    { date: "2026-10-12", label: "EPFL E3 portal opens", hint: "Switzerland summer research 2027", status: "urgent" },
     { date: "2026-10-15", label: "AIAA scholarships open", hint: "Denise Ponchak for non-US", status: "urgent" },
     { date: "2026-10-15", label: "Gabriel Ezenri published close", hint: "Portal shows closed – verify", status: "urgent" },
-    { date: "2026-11-01", label: "Open Doors portfolio closes", hint: "Engineering & Technology track", status: "open" },
+    { date: "2026-11-01", label: "EPFL E3 + Open Doors close", hint: "Two international deadlines", status: "open" },
     { date: "2026-11-08", label: "IEEE WIE International closes", hint: "Female, high GPA, 2yr WIE", status: "open" },
-    { date: "2026-11-09", label: "Carewave Aspire closes", hint: "₦500k local bridge", status: "open" },
+    { date: "2026-11-09", label: "Carewave Aspire closes", hint: "Local ₦500k bridge", status: "open" },
     { date: "2027-01-31", label: "AIAA scholarships close", hint: "Yearly cycle", status: "forecast" }
   ],
   opportunities: [
     {
+      id: "epfl-e3",
+      name: "EPFL E3 Excellence in Engineering Summer Research 2027",
+      status: "urgent",
+      type: "International summer research internship",
+      destination: "Switzerland (EPFL Lausanne and partner sites)",
+      level: "BSc (after 2 years) or MSc in engineering, science or technology",
+      covers: "Monthly stipend (CHF 1,800 typical; higher at some sites) for housing and living; travel reimbursement on lab approval; 8–12 weeks research placement.",
+      eligibility: "All nationalities. Mechanical engineering explicitly listed. Completed at least second year of Bachelor at application. Strong academic record (top of class expected). English proficiency.",
+      deadline: "Portal opens 12 October 2026; closes 1 November 2026 (Summer 2027)",
+      link: "https://eee.epfl.ch/",
+      linkLabel: "Official EPFL E3 page",
+      aerospace: "Direct research experience in mechanical, materials, microengineering or related labs at a top European engineering school — strong aerospace skill and network bridge.",
+      next: "Prepare CV, transcript, statement of purpose, preferred lab areas and reference. Apply as soon as portal opens 12 Oct."
+    },
+    {
       id: "aiaa-scholarships",
       name: "AIAA Foundation Undergraduate Scholarships (Denise Ponchak Digital Avionics)",
       status: "urgent",
-      type: "Scholarship",
-      destination: "Cash award (any location)",
+      type: "International scholarship",
+      destination: "Cash award (any location; non-US students eligible for Denise Ponchak)",
       level: "Undergraduate (sophomore/junior/senior), AIAA student member",
-      covers: "Denise Ponchak $3,000 for non-U.S. students at non-U.S. universities; others up to $10,000 mostly US-enrolled.",
+      covers: "Denise Ponchak $3,000 for non-U.S. students at non-U.S. universities; other awards up to $10,000 mostly require US enrolment.",
       eligibility: "AIAA student member. Completed at least one semester. Relevant GPA (typically 3.3/4.0). Denise Ponchak open to non-US students at non-US universities (no embargoed countries). Aerospace-relevant plan.",
       deadline: "Opens 15 October 2026; closes 31 January 2027 (yearly)",
       link: "https://aiaa.org/get-involved/university-students/undergraduate-scholarships-graduate-awards/",
@@ -47,7 +63,7 @@ window.BOARD = {
       id: "open-doors",
       name: "Open Doors Russian Scholarship Project 2027",
       status: "open",
-      type: "Fully funded scholarship / competition",
+      type: "International fully funded scholarship / competition",
       destination: "Russia (24 universities)",
       level: "Bachelor’s, Master’s, PhD tracks",
       covers: "Tuition-free place under government quota + stipend/grant eligibility.",
@@ -62,7 +78,7 @@ window.BOARD = {
       id: "ieee-wie",
       name: "IEEE WIE International Scholarship 2026",
       status: "open",
-      type: "Scholarship",
+      type: "International scholarship",
       destination: "Cash award",
       level: "Undergraduate engineering",
       covers: "US$2,500 + certificate.",
@@ -92,7 +108,7 @@ window.BOARD = {
       id: "iaeste",
       name: "IAESTE Nigeria paid internships",
       status: "open",
-      type: "Paid internship / exchange",
+      type: "International paid internship / exchange",
       destination: "80+ countries (offer-dependent)",
       level: "Enrolled Nigerian university undergrad, age 19-30, usually after 4 semesters",
       covers: "Local living-cost stipend; support with visa, accommodation, and pre-departure. National participation fee applies.",
@@ -107,16 +123,16 @@ window.BOARD = {
       id: "aiaa-dbf",
       name: "AIAA Design/Build/Fly 2027",
       status: "forecast",
-      type: "Team aircraft competition",
+      type: "International team aircraft competition",
       destination: "Online proposal; fly-off typically US",
       level: "Undergraduate student teams",
       covers: "Competition participation and recognition. Travel/shipping not funded.",
       eligibility: "Teams worldwide. AIAA student membership required.",
-      deadline: "Typical proposal window mid-to-late October each year",
+      deadline: "Typical proposal window mid-to-late October each year (kept as forecast)",
       link: "https://aiaa.org/get-involved/university-students/dbf/",
       linkLabel: "AIAA DBF page",
       aerospace: "Direct aircraft design, build, and fly competition.",
-      next: "Monitor for 2027 cycle opening. Form campus team if pursuing."
+      next: "Monitor for 2027 cycle opening. Form campus team if pursuing. Kept active on the board."
     },
     {
       id: "stem-to-space",
@@ -127,11 +143,26 @@ window.BOARD = {
       level: "Nigerian STEM undergraduate not in final year",
       covers: "Funding for one full academic year covering tuition, accommodation, and learning resources.",
       eligibility: "Nigerian citizen. Enrolled in STEM (including Engineering). Motivation essay and 30-second video required.",
-      deadline: "Previous cycle closed 2 April 2026; monitor for next annual cycle",
+      deadline: "Previous cycle closed 2 April 2026; kept as forecast for next annual cycle",
       link: "https://form.jotform.com/253546407041048",
       linkLabel: "Previous application form",
       aerospace: "Explicit STEM-to-space theme; useful for building narrative and covering study costs.",
-      next: "Watch for 2027 cycle announcement. Prepare short video and essay on STEM impact."
+      next: "Watch for 2027 cycle announcement. Prepare short video and essay on STEM impact. Kept active on the board."
+    },
+    {
+      id: "chevening",
+      name: "Chevening Scholarship",
+      status: "forecast",
+      type: "International postgraduate scholarship",
+      destination: "United Kingdom",
+      level: "Master's (requires completed bachelor's + work experience)",
+      covers: "Fully funded one-year master's",
+      eligibility: "Not for current undergraduates; file after graduation. Kept on the board as forecast rather than removed.",
+      deadline: "Typically early October (previous cycle closed); next cycle expected similar timing",
+      link: "https://www.chevening.org/",
+      linkLabel: "Chevening",
+      aerospace: "Post-graduation route to UK aerospace master's.",
+      next: "File for after graduation. Kept active on the board as forecast."
     }
   ],
   excluded: [
@@ -194,28 +225,12 @@ window.BOARD = {
       linkLabel: "ESA student internships",
       aerospace: "Direct space agency experience.",
       next: "Nationality and level restrictions apply."
-    },
-    {
-      id: "chevening",
-      name: "Chevening Scholarship",
-      status: "excluded",
-      type: "Postgraduate scholarship",
-      destination: "United Kingdom",
-      level: "Master's (requires completed bachelor's + work experience)",
-      covers: "Fully funded one-year master's",
-      eligibility: "Not for current undergraduates.",
-      deadline: "Typically early October",
-      link: "https://www.chevening.org/",
-      linkLabel: "Chevening",
-      aerospace: "Post-graduation route to UK aerospace master's.",
-      next: "File for after graduation."
     }
   ],
   nextSteps: [
-    { when: "Immediately (by 15 Oct)", what: "Verify Gabriel Ezenri status with foundation. Join AIAA and prepare scholarship materials." },
-    { when: "This week", what: "Contact IAESTE Nigeria with CV. Start Open Doors registration and portfolio." },
-    { when: "Before 1 Nov", what: "Submit Open Doors portfolio." },
-    { when: "Before 8-9 Nov", what: "Submit IEEE WIE (if eligible) and Carewave applications." },
-    { when: "Ongoing", what: "Monitor IAESTE offers and AIAA cycles. Keep passport ready." }
+    { when: "12–15 Oct", what: "EPFL E3 portal opens — prepare and submit. Join AIAA; prepare Denise Ponchak materials. Verify Gabriel Ezenri status." },
+    { when: "Before 1 Nov", what: "Submit EPFL E3 application and Open Doors portfolio." },
+    { when: "Before 8–9 Nov", what: "Submit IEEE WIE (if eligible) and Carewave applications." },
+    { when: "Ongoing", what: "Contact IAESTE Nigeria. Keep passport ready. Monitor forecast international cycles (AIAA DBF, Chevening, STEM to Space)." }
   ]
 };
