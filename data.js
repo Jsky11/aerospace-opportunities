@@ -1,17 +1,33 @@
 window.BOARD = {
-  updated: "2026-10-10",
+  updated: "2026-10-11",
   timezone: "Africa/Lagos",
   profile: "Nigerian Mechanical Engineering undergraduate, 300 level, aerospace / space focus",
-  summary: "Urgent: Gabriel Ezenri closes 15 Oct. AIAA scholarships open 15 Oct (Denise Ponchak for non-US). Carewave 9 Nov. IAESTE and STEM to Space remain strong open routes. Focus on funded travel and bridge funding.",
-  stats: { urgent: 2, open: 4, forecast: 3, excluded: 5 },
+  summary: "AIAA scholarships open 15 Oct (Denise Ponchak for non-US). Open Doors portfolio closes 1 Nov. IEEE WIE (female) and Carewave close early Nov. IAESTE remains ongoing. Verify Gabriel Ezenri status immediately. Focus on funded travel and bridge funding.",
+  stats: { urgent: 2, open: 4, forecast: 2, excluded: 5 },
   deadlines: [
-    { date: "2026-10-15", label: "Gabriel Ezenri closes", hint: "Domestic bridge up to ₦500k", status: "urgent" },
-    { date: "2026-10-15", label: "AIAA scholarships open", hint: "Denise Ponchak for non-US students", status: "urgent" },
-    { date: "2026-11-09", label: "Carewave Aspire closes", hint: "₦500k local, Mech eligible", status: "open" },
-    { date: "2026-04-02", label: "STEM to Space closes", hint: "Fully funded one year Nigerian STEM", status: "open" },
+    { date: "2026-10-15", label: "AIAA scholarships open", hint: "Denise Ponchak for non-US", status: "urgent" },
+    { date: "2026-10-15", label: "Gabriel Ezenri published close", hint: "Portal shows closed – verify", status: "urgent" },
+    { date: "2026-11-01", label: "Open Doors portfolio closes", hint: "Engineering & Technology track", status: "open" },
+    { date: "2026-11-08", label: "IEEE WIE International closes", hint: "Female, high GPA, 2yr WIE", status: "open" },
+    { date: "2026-11-09", label: "Carewave Aspire closes", hint: "₦500k local bridge", status: "open" },
     { date: "2027-01-31", label: "AIAA scholarships close", hint: "Yearly cycle", status: "forecast" }
   ],
   opportunities: [
+    {
+      id: "aiaa-scholarships",
+      name: "AIAA Foundation Undergraduate Scholarships (Denise Ponchak Digital Avionics)",
+      status: "urgent",
+      type: "Scholarship",
+      destination: "Cash award (any location)",
+      level: "Undergraduate (sophomore/junior/senior), AIAA student member",
+      covers: "Denise Ponchak $3,000 for non-U.S. students at non-U.S. universities; others up to $10,000 mostly US-enrolled.",
+      eligibility: "AIAA student member. Completed at least one semester. Relevant GPA (typically 3.3/4.0). Denise Ponchak open to non-US students at non-US universities (no embargoed countries). Aerospace-relevant plan.",
+      deadline: "Opens 15 October 2026; closes 31 January 2027 (yearly)",
+      link: "https://aiaa.org/get-involved/university-students/undergraduate-scholarships-graduate-awards/",
+      linkLabel: "AIAA scholarships page",
+      aerospace: "Direct aerospace society support; Denise Ponchak targets digital avionics.",
+      next: "Join AIAA as student member now. Prepare essay and recommendation for 15 October opening. Prioritize Denise Ponchak."
+    },
     {
       id: "gabriel-ezenri",
       name: "Gabriel Ezenri Foundation Scholarship 2026",
@@ -20,27 +36,42 @@ window.BOARD = {
       destination: "Nigeria (cash award)",
       level: "Undergraduate at accredited Nigerian university/polytechnic",
       covers: "Up to ₦500,000 per academic session for tuition, materials, and modest living stipend.",
-      eligibility: "Nigerian citizens. Min CGPA 3.5/5.0 (or equivalent for new entrants). Demonstrable financial need. Mechanical Engineering eligible.",
-      deadline: "15 October 2026",
+      eligibility: "Nigerian citizens. Min CGPA 3.5/5.0. Demonstrable financial need. Mechanical Engineering eligible. Official portal currently shows closed – verify immediately.",
+      deadline: "Published 15 October 2026 (confirm status)",
       link: "https://gabrielezenrifoundation.org/apply",
       linkLabel: "Official apply page",
       aerospace: "Domestic bridge funding that can support passport, visa, or IAESTE participation costs.",
-      next: "Submit before 15 October with transcript, personal statement, and need evidence. No application fee."
+      next: "Contact foundation to confirm if applications still accepted. If open, submit with transcript and need evidence."
     },
     {
-      id: "aiaa-scholarships",
-      name: "AIAA Foundation Undergraduate Scholarships (Denise Ponchak Digital Avionics)",
-      status: "urgent",
+      id: "open-doors",
+      name: "Open Doors Russian Scholarship Project 2027",
+      status: "open",
+      type: "Fully funded scholarship / competition",
+      destination: "Russia (24 universities)",
+      level: "Bachelor’s, Master’s, PhD tracks",
+      covers: "Tuition-free place under government quota + stipend/grant eligibility.",
+      eligibility: "All foreign citizens. Engineering & Technology subject area. Aerospace programs (rockets, aircraft engines) available at participating universities. Suitable for post-grad Master’s or portfolio prep.",
+      deadline: "Portfolio submission closes 1 November 2026",
+      link: "https://od.globaluni.ru/",
+      linkLabel: "Official Open Doors portal",
+      aerospace: "Strong exposure to aerospace engineering, propulsion, and space systems in Russian universities.",
+      next: "Register and prepare motivation letter + academic portfolio for Engineering & Technology track."
+    },
+    {
+      id: "ieee-wie",
+      name: "IEEE WIE International Scholarship 2026",
+      status: "open",
       type: "Scholarship",
-      destination: "Cash award (any location)",
-      level: "Undergraduate (sophomore/junior/senior), AIAA student member",
-      covers: "Up to $10,000 general; Denise Ponchak $3,000 specifically for non-U.S. students at non-U.S. universities.",
-      eligibility: "Completed at least one semester. Relevant GPA (typically 3.3/4.0 unless noted). Denise Ponchak open to non-US students outside the US (no embargoed countries). Avionics/aerospace interest.",
-      deadline: "Opens 15 October 2026; closes 31 January 2027 (yearly)",
-      link: "https://aiaa.org/get-involved/university-students/undergraduate-scholarships-graduate-awards/",
-      linkLabel: "AIAA scholarships page",
-      aerospace: "Direct aerospace society support; Denise Ponchak targets digital avionics.",
-      next: "Join AIAA as student member now. Prepare essay and recommendation for 15 October opening. Prioritize Denise Ponchak."
+      destination: "Cash award",
+      level: "Undergraduate engineering",
+      covers: "US$2,500 + certificate.",
+      eligibility: "Female. IEEE WIE Student Member for at least second consecutive year. Completed two years of undergrad engineering. GPA ≥3.7/4.0 or equivalent. Mechanical Engineering eligible.",
+      deadline: "8 November 2026 (11:59 PM EDT)",
+      link: "https://ieee.secure-platform.com/a/page/Scholarships_ieee/WIE_International",
+      linkLabel: "IEEE WIE International Scholarship",
+      aerospace: "Bridge funding for travel documents, memberships, or internship costs.",
+      next: "Confirm membership duration and GPA. Prepare two-part essay and two recommendation letters."
     },
     {
       id: "carewave",
@@ -50,12 +81,12 @@ window.BOARD = {
       destination: "Nigeria (cash award)",
       level: "Nigerian undergrads (typically 18-25) at eligible Federal Universities",
       covers: "₦500,000 per year; tuition and living support components reported.",
-      eligibility: "Nigerian citizen. Mechanical Engineering explicitly listed. Min CGPA around 4.5/5.0 and financial need on some listings. Confirm on portal.",
+      eligibility: "Nigerian citizen. Mechanical Engineering explicitly listed. High CGPA and financial need. Confirm on portal.",
       deadline: "9 November 2026",
       link: "https://portal.carewavefoundation.org/scholarships/apply?scholarshipId=SCH-2026-946543",
       linkLabel: "Carewave apply portal",
       aerospace: "Local bridge funding for travel document or internship costs.",
-      next: "Create account and upload required documents (admission, results, need proof, motivation) before 9 November."
+      next: "Create account and upload required documents before 9 November."
     },
     {
       id: "iaeste",
@@ -73,21 +104,6 @@ window.BOARD = {
       next: "Email nigeria@iaeste.org with English CV, subject list, and contact details. Monitor global portal for offers."
     },
     {
-      id: "stem-to-space",
-      name: "STEM to Space Scholarship 2026",
-      status: "open",
-      type: "Local undergraduate scholarship",
-      destination: "Nigeria (full year funding)",
-      level: "Nigerian STEM undergraduate not in final year",
-      covers: "Funding for one full academic year covering tuition, accommodation, and learning resources.",
-      eligibility: "Nigerian citizen. Enrolled in STEM (including Engineering). Motivation essay and 30-second video required.",
-      deadline: "2 April 2026 (11:59 PM WAT)",
-      link: "https://form.jotform.com/253546407041048",
-      linkLabel: "STEM to Space application form",
-      aerospace: "Explicit STEM-to-space theme; useful for building narrative and covering study costs.",
-      next: "Prepare short video and essay on STEM impact. Submit form with enrollment proof before 2 April."
-    },
-    {
       id: "aiaa-dbf",
       name: "AIAA Design/Build/Fly 2027",
       status: "forecast",
@@ -101,6 +117,21 @@ window.BOARD = {
       linkLabel: "AIAA DBF page",
       aerospace: "Direct aircraft design, build, and fly competition.",
       next: "Monitor for 2027 cycle opening. Form campus team if pursuing."
+    },
+    {
+      id: "stem-to-space",
+      name: "STEM to Space Scholarship",
+      status: "forecast",
+      type: "Local undergraduate scholarship",
+      destination: "Nigeria (full year funding)",
+      level: "Nigerian STEM undergraduate not in final year",
+      covers: "Funding for one full academic year covering tuition, accommodation, and learning resources.",
+      eligibility: "Nigerian citizen. Enrolled in STEM (including Engineering). Motivation essay and 30-second video required.",
+      deadline: "Previous cycle closed 2 April 2026; monitor for next annual cycle",
+      link: "https://form.jotform.com/253546407041048",
+      linkLabel: "Previous application form",
+      aerospace: "Explicit STEM-to-space theme; useful for building narrative and covering study costs.",
+      next: "Watch for 2027 cycle announcement. Prepare short video and essay on STEM impact."
     }
   ],
   excluded: [
@@ -173,7 +204,7 @@ window.BOARD = {
       level: "Master's (requires completed bachelor's + work experience)",
       covers: "Fully funded one-year master's",
       eligibility: "Not for current undergraduates.",
-      deadline: "Typically early October (2027/28 closed ~6 Oct 2026)",
+      deadline: "Typically early October",
       link: "https://www.chevening.org/",
       linkLabel: "Chevening",
       aerospace: "Post-graduation route to UK aerospace master's.",
@@ -181,10 +212,10 @@ window.BOARD = {
     }
   ],
   nextSteps: [
-    { when: "Immediately (by 15 Oct)", what: "Submit Gabriel Ezenri application. Join AIAA and prepare scholarship materials for opening." },
-    { when: "This week", what: "Contact IAESTE Nigeria with CV. Start Carewave documents." },
-    { when: "Before 9 Nov", what: "Complete and submit Carewave Aspire application." },
-    { when: "Before 2 Apr 2027", what: "Submit STEM to Space scholarship (video + essay)." },
+    { when: "Immediately (by 15 Oct)", what: "Verify Gabriel Ezenri status with foundation. Join AIAA and prepare scholarship materials." },
+    { when: "This week", what: "Contact IAESTE Nigeria with CV. Start Open Doors registration and portfolio." },
+    { when: "Before 1 Nov", what: "Submit Open Doors portfolio." },
+    { when: "Before 8-9 Nov", what: "Submit IEEE WIE (if eligible) and Carewave applications." },
     { when: "Ongoing", what: "Monitor IAESTE offers and AIAA cycles. Keep passport ready." }
   ]
 };
