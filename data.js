@@ -1,19 +1,33 @@
 window.BOARD = {
-  updated: "2026-10-11",
+  updated: "2026-10-12",
   timezone: "Africa/Lagos",
   profile: "Nigerian Mechanical Engineering undergraduate, 300 level, aerospace / space focus",
-  summary: "INTERNATIONAL: EPFL E3 portal opens 12 Oct (closes 1 Nov) — strong Mech match in Switzerland. AIAA (Denise Ponchak) opens 15 Oct. Open Doors 1 Nov. IEEE WIE 8 Nov. IAESTE ongoing. LOCAL: Gabriel (verify), Carewave 9 Nov. Cyclic programmes kept as forecast, not removed.",
-  stats: { urgent: 3, open: 4, forecast: 3, excluded: 4 },
+  summary: "INTERNATIONAL: AIAA DBF proposal window opens 15 Oct (closes 31 Oct) — strong aerospace match. EPFL E3 portal open/closing 1 Nov. Open Doors 1 Nov. IEEE WIE 8 Nov. IAESTE ongoing. LOCAL: Gabriel (verify portal) and Carewave 9 Nov as bridge funding. Cyclic items kept as forecast.",
+  stats: { urgent: 3, open: 5, forecast: 3, excluded: 4 },
   deadlines: [
-    { date: "2026-10-12", label: "EPFL E3 portal opens", hint: "Switzerland summer research 2027", status: "urgent" },
-    { date: "2026-10-15", label: "AIAA scholarships open", hint: "Denise Ponchak for non-US", status: "urgent" },
-    { date: "2026-10-15", label: "Gabriel Ezenri published close", hint: "Portal shows closed – verify", status: "urgent" },
+    { date: "2026-10-15", label: "AIAA DBF proposals open + Gabriel check", hint: "DBF proposal window; verify local scholarship", status: "urgent" },
+    { date: "2026-10-31", label: "AIAA DBF proposals close", hint: "International aircraft competition", status: "urgent" },
     { date: "2026-11-01", label: "EPFL E3 + Open Doors close", hint: "Two international deadlines", status: "open" },
     { date: "2026-11-08", label: "IEEE WIE International closes", hint: "Female, high GPA, 2yr WIE", status: "open" },
     { date: "2026-11-09", label: "Carewave Aspire closes", hint: "Local ₦500k bridge", status: "open" },
     { date: "2027-01-31", label: "AIAA scholarships close", hint: "Yearly cycle", status: "forecast" }
   ],
   opportunities: [
+    {
+      id: "aiaa-dbf",
+      name: "AIAA Design/Build/Fly 2027",
+      status: "urgent",
+      type: "International team aircraft competition",
+      destination: "Tucson, AZ, USA (fly-off); proposal online",
+      level: "Undergraduate student teams (Mech/Aerospace eligible)",
+      covers: "Competition participation and recognition. Travel/shipping not funded.",
+      eligibility: "Teams worldwide. AIAA student membership required for all members. International teams welcome.",
+      deadline: "Proposal submissions 15–31 October 2026 (closes 5pm ET)",
+      link: "https://aiaa.org/get-involved/university-students/dbf/",
+      linkLabel: "Official AIAA DBF page",
+      aerospace: "Direct hands-on aircraft design, build, and flight testing. Premier student aerospace competition.",
+      next: "Form team, ensure AIAA memberships, prepare and submit proposal by 31 Oct."
+    },
     {
       id: "epfl-e3",
       name: "EPFL E3 Excellence in Engineering Summer Research 2027",
@@ -23,26 +37,11 @@ window.BOARD = {
       level: "BSc (after 2 years) or MSc in engineering, science or technology",
       covers: "Monthly stipend (CHF 1,800 typical; higher at some sites) for housing and living; travel reimbursement on lab approval; 8–12 weeks research placement.",
       eligibility: "All nationalities. Mechanical engineering explicitly listed. Completed at least second year of Bachelor at application. Strong academic record (top of class expected). English proficiency.",
-      deadline: "Portal opens 12 October 2026; closes 1 November 2026 (Summer 2027)",
+      deadline: "Portal open; closes 1 November 2026 (Summer 2027)",
       link: "https://eee.epfl.ch/",
       linkLabel: "Official EPFL E3 page",
       aerospace: "Direct research experience in mechanical, materials, microengineering or related labs at a top European engineering school — strong aerospace skill and network bridge.",
-      next: "Prepare CV, transcript, statement of purpose, preferred lab areas and reference. Apply as soon as portal opens 12 Oct."
-    },
-    {
-      id: "aiaa-scholarships",
-      name: "AIAA Foundation Undergraduate Scholarships (Denise Ponchak Digital Avionics)",
-      status: "urgent",
-      type: "International scholarship",
-      destination: "Cash award (any location; non-US students eligible for Denise Ponchak)",
-      level: "Undergraduate (sophomore/junior/senior), AIAA student member",
-      covers: "Denise Ponchak $3,000 for non-U.S. students at non-U.S. universities; other awards up to $10,000 mostly require US enrolment.",
-      eligibility: "AIAA student member. Completed at least one semester. Relevant GPA (typically 3.3/4.0). Denise Ponchak open to non-US students at non-US universities (no embargoed countries). Aerospace-relevant plan.",
-      deadline: "Opens 15 October 2026; closes 31 January 2027 (yearly)",
-      link: "https://aiaa.org/get-involved/university-students/undergraduate-scholarships-graduate-awards/",
-      linkLabel: "AIAA scholarships page",
-      aerospace: "Direct aerospace society support; Denise Ponchak targets digital avionics.",
-      next: "Join AIAA as student member now. Prepare essay and recommendation for 15 October opening. Prioritize Denise Ponchak."
+      next: "Prepare CV, transcript, statement of purpose, preferred lab areas and reference. Submit before 1 Nov."
     },
     {
       id: "gabriel-ezenri",
@@ -53,7 +52,7 @@ window.BOARD = {
       level: "Undergraduate at accredited Nigerian university/polytechnic",
       covers: "Up to ₦500,000 per academic session for tuition, materials, and modest living stipend.",
       eligibility: "Nigerian citizens. Min CGPA 3.5/5.0. Demonstrable financial need. Mechanical Engineering eligible. Official portal currently shows closed – verify immediately.",
-      deadline: "Published 15 October 2026 (confirm status)",
+      deadline: "Published ~15 October 2026 (confirm status)",
       link: "https://gabrielezenrifoundation.org/apply",
       linkLabel: "Official apply page",
       aerospace: "Domestic bridge funding that can support passport, visa, or IAESTE participation costs.",
@@ -84,7 +83,7 @@ window.BOARD = {
       covers: "US$2,500 + certificate.",
       eligibility: "Female. IEEE WIE Student Member for at least second consecutive year. Completed two years of undergrad engineering. GPA ≥3.7/4.0 or equivalent. Mechanical Engineering eligible.",
       deadline: "8 November 2026 (11:59 PM EDT)",
-      link: "https://ieee.secure-platform.com/a/page/Scholarships_ieee/WIE_International",
+      link: "https://wie.ieee.org/grants-scholarships/international-scholarship/",
       linkLabel: "IEEE WIE International Scholarship",
       aerospace: "Bridge funding for travel documents, memberships, or internship costs.",
       next: "Confirm membership duration and GPA. Prepare two-part essay and two recommendation letters."
@@ -99,8 +98,8 @@ window.BOARD = {
       covers: "₦500,000 per year; tuition and living support components reported.",
       eligibility: "Nigerian citizen. Mechanical Engineering explicitly listed. High CGPA and financial need. Confirm on portal.",
       deadline: "9 November 2026",
-      link: "https://portal.carewavefoundation.org/scholarships/apply?scholarshipId=SCH-2026-946543",
-      linkLabel: "Carewave apply portal",
+      link: "https://youthexpat.com/2026/10/06/carewave-aspire-scholarship-programme/",
+      linkLabel: "Carewave listing (verify official)",
       aerospace: "Local bridge funding for travel document or internship costs.",
       next: "Create account and upload required documents before 9 November."
     },
@@ -114,25 +113,25 @@ window.BOARD = {
       covers: "Local living-cost stipend; support with visa, accommodation, and pre-departure. National participation fee applies.",
       eligibility: "Nigerian university students via IAESTE Nigeria. Mechanical Engineering is a core field; aerospace offers appear periodically.",
       deadline: "Offer-driven / rolling via national committee",
-      link: "https://iaeste.ng/index.php/students/",
-      linkLabel: "IAESTE Nigeria students",
+      link: "https://iaeste.ng/",
+      linkLabel: "IAESTE Nigeria",
       aerospace: "Filter for aerospace, aeronautical, automotive, or manufacturing offers that build relevant skills.",
       next: "Email nigeria@iaeste.org with English CV, subject list, and contact details. Monitor global portal for offers."
     },
     {
-      id: "aiaa-dbf",
-      name: "AIAA Design/Build/Fly 2027",
-      status: "forecast",
-      type: "International team aircraft competition",
-      destination: "Online proposal; fly-off typically US",
-      level: "Undergraduate student teams",
-      covers: "Competition participation and recognition. Travel/shipping not funded.",
-      eligibility: "Teams worldwide. AIAA student membership required.",
-      deadline: "Typical proposal window mid-to-late October each year (kept as forecast)",
-      link: "https://aiaa.org/get-involved/university-students/dbf/",
-      linkLabel: "AIAA DBF page",
-      aerospace: "Direct aircraft design, build, and fly competition.",
-      next: "Monitor for 2027 cycle opening. Form campus team if pursuing. Kept active on the board."
+      id: "aiaa-scholarships",
+      name: "AIAA Foundation Undergraduate Scholarships (Denise Ponchak Digital Avionics)",
+      status: "open",
+      type: "International scholarship",
+      destination: "Cash award (any location; non-US students eligible for Denise Ponchak)",
+      level: "Undergraduate (sophomore/junior/senior), AIAA student member",
+      covers: "Denise Ponchak $3,000 for non-U.S. students at non-U.S. universities; other awards up to $10,000 mostly require US enrolment.",
+      eligibility: "AIAA student member. Completed at least one semester. Relevant GPA (typically 3.3/4.0). Denise Ponchak open to non-US students at non-US universities (no embargoed countries). Aerospace-relevant plan.",
+      deadline: "Opens 15 October 2026; closes 31 January 2027 (yearly)",
+      link: "https://aiaa.org/get-involved/university-students/undergraduate-scholarships-graduate-awards/",
+      linkLabel: "AIAA scholarships page",
+      aerospace: "Direct aerospace society support; Denise Ponchak targets digital avionics.",
+      next: "Join AIAA as student member now. Prepare essay and recommendation for 15 October opening. Prioritize Denise Ponchak."
     },
     {
       id: "stem-to-space",
@@ -158,7 +157,7 @@ window.BOARD = {
       level: "Master's (requires completed bachelor's + work experience)",
       covers: "Fully funded one-year master's",
       eligibility: "Not for current undergraduates; file after graduation. Kept on the board as forecast rather than removed.",
-      deadline: "Typically early October (previous cycle closed); next cycle expected similar timing",
+      deadline: "Typically early October (previous cycle closed); next cycle expected Aug 2027",
       link: "https://www.chevening.org/",
       linkLabel: "Chevening",
       aerospace: "Post-graduation route to UK aerospace master's.",
@@ -228,9 +227,9 @@ window.BOARD = {
     }
   ],
   nextSteps: [
-    { when: "12–15 Oct", what: "EPFL E3 portal opens — prepare and submit. Join AIAA; prepare Denise Ponchak materials. Verify Gabriel Ezenri status." },
+    { when: "15–31 Oct", what: "Submit AIAA DBF proposal if forming team. Verify Gabriel Ezenri. Prepare AIAA Denise Ponchak materials (opens 15 Oct)." },
     { when: "Before 1 Nov", what: "Submit EPFL E3 application and Open Doors portfolio." },
     { when: "Before 8–9 Nov", what: "Submit IEEE WIE (if eligible) and Carewave applications." },
-    { when: "Ongoing", what: "Contact IAESTE Nigeria. Keep passport ready. Monitor forecast international cycles (AIAA DBF, Chevening, STEM to Space)." }
+    { when: "Ongoing", what: "Contact IAESTE Nigeria. Keep passport ready. Monitor forecast international cycles (Chevening, STEM to Space)." }
   ]
 };
