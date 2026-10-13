@@ -1,13 +1,14 @@
 window.BOARD = {
-  updated: "2026-10-12",
+  updated: "2026-10-13",
   timezone: "Africa/Lagos",
   profile: "Nigerian Mechanical Engineering undergraduate, 300 level, aerospace / space focus",
-  summary: "INTERNATIONAL: AIAA DBF proposal window opens 15 Oct (closes 31 Oct) — strong aerospace match. EPFL E3 portal open/closing 1 Nov. Open Doors 1 Nov. IEEE WIE 8 Nov. IAESTE ongoing. LOCAL: Gabriel (verify portal) and Carewave 9 Nov as bridge funding. Cyclic items kept as forecast.",
-  stats: { urgent: 3, open: 5, forecast: 3, excluded: 4 },
+  summary: "INTERNATIONAL: AIAA DBF proposals close 31 Oct (urgent). EPFL E3 and Open Doors close 1 Nov. KAUST VSRP open year-round. AIAA scholarships open from 15 Oct. LOCAL: SG[Nigeria] ASEICC deadline 23 Oct; Carewave 9 Nov. Gabriel and Chevening kept as forecast.",
+  stats: { urgent: 4, open: 5, forecast: 3, excluded: 4 },
   deadlines: [
-    { date: "2026-10-15", label: "AIAA DBF proposals open + Gabriel check", hint: "DBF proposal window; verify local scholarship", status: "urgent" },
+    { date: "2026-10-15", label: "AIAA DBF proposals open + AIAA scholarships open", hint: "DBF window and Denise Ponchak materials", status: "urgent" },
+    { date: "2026-10-23", label: "SG[Nigeria] × ASEICC scholarship closes", hint: "Local space conference pass", status: "urgent" },
     { date: "2026-10-31", label: "AIAA DBF proposals close", hint: "International aircraft competition", status: "urgent" },
-    { date: "2026-11-01", label: "EPFL E3 + Open Doors close", hint: "Two international deadlines", status: "open" },
+    { date: "2026-11-01", label: "EPFL E3 + Open Doors close", hint: "Two international deadlines", status: "urgent" },
     { date: "2026-11-08", label: "IEEE WIE International closes", hint: "Female, high GPA, 2yr WIE", status: "open" },
     { date: "2026-11-09", label: "Carewave Aspire closes", hint: "Local ₦500k bridge", status: "open" },
     { date: "2027-01-31", label: "AIAA scholarships close", hint: "Yearly cycle", status: "forecast" }
@@ -44,24 +45,24 @@ window.BOARD = {
       next: "Prepare CV, transcript, statement of purpose, preferred lab areas and reference. Submit before 1 Nov."
     },
     {
-      id: "gabriel-ezenri",
-      name: "Gabriel Ezenri Foundation Scholarship 2026",
+      id: "sg-nigeria-aseicc",
+      name: "SG[Nigeria] × ASEICC Delegate Scholarship",
       status: "urgent",
-      type: "Local undergraduate scholarship",
-      destination: "Nigeria (cash award)",
-      level: "Undergraduate at accredited Nigerian university/polytechnic",
-      covers: "Up to ₦500,000 per academic session for tuition, materials, and modest living stipend.",
-      eligibility: "Nigerian citizens. Min CGPA 3.5/5.0. Demonstrable financial need. Mechanical Engineering eligible. Official portal currently shows closed – verify immediately.",
-      deadline: "Published ~15 October 2026 (confirm status)",
-      link: "https://gabrielezenrifoundation.org/apply",
-      linkLabel: "Official apply page",
-      aerospace: "Domestic bridge funding that can support passport, visa, or IAESTE participation costs.",
-      next: "Contact foundation to confirm if applications still accepted. If open, submit with transcript and need evidence."
+      type: "Local space conference scholarship",
+      destination: "Nigeria (Abuja, NASRDA)",
+      level: "Students and young professionals 18–35 (SGAC members)",
+      covers: "Full access pass to SG[Nigeria] and ASEIC Conference 23–27 Nov 2026. Travel and accommodation not covered.",
+      eligibility: "SGAC members. Nigerian/African students and young professionals interested in space. Mech/Aerospace relevant.",
+      deadline: "23 October 2026 (23:59 WAT)",
+      link: "https://spacegeneration.org/sg-nigeria-aseicc-scholarship",
+      linkLabel: "Official SGAC scholarship page",
+      aerospace: "Direct networking in African space community at NASRDA; space economy and innovation focus.",
+      next: "Join SGAC if needed, prepare CV and 500-word impact pitch. Submit by 23 Oct."
     },
     {
       id: "open-doors",
       name: "Open Doors Russian Scholarship Project 2027",
-      status: "open",
+      status: "urgent",
       type: "International fully funded scholarship / competition",
       destination: "Russia (24 universities)",
       level: "Bachelor’s, Master’s, PhD tracks",
@@ -72,6 +73,21 @@ window.BOARD = {
       linkLabel: "Official Open Doors portal",
       aerospace: "Strong exposure to aerospace engineering, propulsion, and space systems in Russian universities.",
       next: "Register and prepare motivation letter + academic portfolio for Engineering & Technology track."
+    },
+    {
+      id: "kaust-vsrp",
+      name: "KAUST Visiting Student Research Program (VSRP)",
+      status: "open",
+      type: "International research internship",
+      destination: "Saudi Arabia (KAUST)",
+      level: "3rd-year+ BSc or Master’s in STEM (Mechanical Engineering eligible)",
+      covers: "USD 1,000 monthly stipend, private room, return airfare, health insurance, lab access. 3–6 months.",
+      eligibility: "All nationalities. GPA ≥3.5/4.0 or equivalent. English proficiency. Open year-round. Arrival minimum 6 weeks after submission.",
+      deadline: "Open all year (apply anytime)",
+      link: "https://admissions.kaust.edu.sa/study/internships",
+      linkLabel: "Official KAUST internships page",
+      aerospace: "Mechanical engineering and related research projects available; strong research experience bridge into aerospace skills.",
+      next: "Browse available projects, prepare transcripts, CV, statement of purpose, recommendation and passport. Apply early."
     },
     {
       id: "ieee-wie",
@@ -98,8 +114,8 @@ window.BOARD = {
       covers: "₦500,000 per year; tuition and living support components reported.",
       eligibility: "Nigerian citizen. Mechanical Engineering explicitly listed. High CGPA and financial need. Confirm on portal.",
       deadline: "9 November 2026",
-      link: "https://youthexpat.com/2026/10/06/carewave-aspire-scholarship-programme/",
-      linkLabel: "Carewave listing (verify official)",
+      link: "https://portal.carewavefoundation.org/",
+      linkLabel: "Carewave portal (verify official)",
       aerospace: "Local bridge funding for travel document or internship costs.",
       next: "Create account and upload required documents before 9 November."
     },
@@ -134,6 +150,21 @@ window.BOARD = {
       next: "Join AIAA as student member now. Prepare essay and recommendation for 15 October opening. Prioritize Denise Ponchak."
     },
     {
+      id: "gabriel-ezenri",
+      name: "Gabriel Ezenri Foundation Scholarship 2026",
+      status: "forecast",
+      type: "Local undergraduate scholarship",
+      destination: "Nigeria (cash award)",
+      level: "Undergraduate at accredited Nigerian university/polytechnic",
+      covers: "Up to ₦500,000 per academic session for tuition, materials, and modest living stipend.",
+      eligibility: "Nigerian citizens. Min CGPA 3.5/5.0. Demonstrable financial need. Mechanical Engineering eligible.",
+      deadline: "2026 cycle closed (~30 Sep / mid-Oct). Next expected September 2027",
+      link: "https://gabrielezenrifoundation.org/",
+      linkLabel: "Official foundation page",
+      aerospace: "Domestic bridge funding that can support passport, visa, or IAESTE participation costs.",
+      next: "Monitor for next annual cycle. Kept active on the board as forecast."
+    },
+    {
       id: "stem-to-space",
       name: "STEM to Space Scholarship",
       status: "forecast",
@@ -157,7 +188,7 @@ window.BOARD = {
       level: "Master's (requires completed bachelor's + work experience)",
       covers: "Fully funded one-year master's",
       eligibility: "Not for current undergraduates; file after graduation. Kept on the board as forecast rather than removed.",
-      deadline: "Typically early October (previous cycle closed); next cycle expected Aug 2027",
+      deadline: "2027/28 closed 6 October 2026. Next cycle expected early August 2027",
       link: "https://www.chevening.org/",
       linkLabel: "Chevening",
       aerospace: "Post-graduation route to UK aerospace master's.",
@@ -227,9 +258,10 @@ window.BOARD = {
     }
   ],
   nextSteps: [
-    { when: "15–31 Oct", what: "Submit AIAA DBF proposal if forming team. Verify Gabriel Ezenri. Prepare AIAA Denise Ponchak materials (opens 15 Oct)." },
+    { when: "15–31 Oct", what: "Submit AIAA DBF proposal if forming team. Join AIAA and prepare Denise Ponchak materials (opens 15 Oct)." },
+    { when: "Before 23 Oct", what: "Apply for SG[Nigeria] × ASEICC Delegate Scholarship (join SGAC first)." },
     { when: "Before 1 Nov", what: "Submit EPFL E3 application and Open Doors portfolio." },
     { when: "Before 8–9 Nov", what: "Submit IEEE WIE (if eligible) and Carewave applications." },
-    { when: "Ongoing", what: "Contact IAESTE Nigeria. Keep passport ready. Monitor forecast international cycles (Chevening, STEM to Space)." }
+    { when: "Ongoing", what: "Apply to KAUST VSRP. Contact IAESTE Nigeria. Keep passport ready. Monitor forecast cycles." }
   ]
 };
