@@ -1,5 +1,5 @@
 window.BOARD = {
-  updated: "2026-10-13",
+  updated: "2026-10-14",
   timezone: "Africa/Lagos",
   profile: "Nigerian Mechanical Engineering undergraduate, 300 level, aerospace / space focus",
   summary: "INTERNATIONAL: AIAA DBF proposals close 31 Oct (urgent). EPFL E3 and Open Doors close 1 Nov. KAUST VSRP open year-round. AIAA scholarships open from 15 Oct. LOCAL: SG[Nigeria] ASEICC deadline 23 Oct; Carewave 9 Nov. Gabriel and Chevening kept as forecast.",
