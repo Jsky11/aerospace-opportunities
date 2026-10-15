@@ -1,8 +1,8 @@
 window.BOARD = {
-  updated: "2026-10-14",
+  updated: "2026-10-15",
   timezone: "Africa/Lagos",
   profile: "Nigerian Mechanical Engineering undergraduate, 300 level, aerospace / space focus",
-  summary: "INTERNATIONAL: AIAA DBF proposals close 31 Oct (urgent). EPFL E3 and Open Doors close 1 Nov. KAUST VSRP open year-round. AIAA scholarships open from 15 Oct. LOCAL: SG[Nigeria] ASEICC deadline 23 Oct; Carewave 9 Nov. Gabriel and Chevening kept as forecast.",
+  summary: "INTERNATIONAL: AIAA DBF proposals open (close 31 Oct — urgent). EPFL E3 and Open Doors close 1 Nov. AIAA scholarships (Denise Ponchak) open today. KAUST VSRP and IAESTE open. LOCAL: SG[Nigeria] ASEICC closes 23 Oct; Carewave 9 Nov. Gabriel and Chevening as forecast.",
   stats: { urgent: 4, open: 5, forecast: 3, excluded: 4 },
   deadlines: [
     { date: "2026-10-15", label: "AIAA DBF proposals open + AIAA scholarships open", hint: "DBF window and Denise Ponchak materials", status: "urgent" },
@@ -147,7 +147,7 @@ window.BOARD = {
       link: "https://aiaa.org/get-involved/university-students/undergraduate-scholarships-graduate-awards/",
       linkLabel: "AIAA scholarships page",
       aerospace: "Direct aerospace society support; Denise Ponchak targets digital avionics.",
-      next: "Join AIAA as student member now. Prepare essay and recommendation for 15 October opening. Prioritize Denise Ponchak."
+      next: "Join AIAA as student member now. Prepare essay and recommendation for the open window. Prioritize Denise Ponchak."
     },
     {
       id: "gabriel-ezenri",
