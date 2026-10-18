@@ -1,5 +1,5 @@
 window.BOARD = {
-  updated: "2026-10-17",
+  updated: "2026-10-18",
   timezone: "Africa/Lagos",
   profile: "Nigerian Mechanical Engineering undergraduate, 300 level, aerospace / space focus",
   summary: "INTERNATIONAL: AIAA DBF proposals close 31 Oct (urgent). EPFL E3 and Open Doors close 1 Nov. AIAA scholarships (Denise Ponchak) and KAUST VSRP / IAESTE open. LOCAL: SG[Nigeria] ASEICC closes 23 Oct; Yinka & Pelumi (OAU) closes 25 Oct; Carewave 9 Nov. Forecasts retained.",
