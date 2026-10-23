@@ -1,8 +1,8 @@
 window.BOARD = {
-  updated: "2026-10-22",
+  updated: "2026-10-23",
   timezone: "Africa/Lagos",
   profile: "Nigerian Mechanical Engineering undergraduate, 300 level, aerospace / space focus",
-  summary: "INTERNATIONAL: AIAA DBF proposals close 31 Oct (urgent). EPFL E3 and Open Doors close 1 Nov. KAUST VSRP / IAESTE / AIAA scholarships open. LOCAL: SG[Nigeria] ASEICC closes 23 Oct; Yinka & Pelumi closes 25 Oct; Carewave 9 Nov. Forecasts retained.",
+  summary: "INTERNATIONAL: AIAA DBF proposals close 31 Oct (urgent). EPFL E3 and Open Doors close 1 Nov. KAUST VSRP / IAESTE / AIAA scholarships open. LOCAL: SG[Nigeria] ASEICC closes today (23 Oct); Yinka & Pelumi closes 25 Oct; Carewave 9 Nov. Forecasts retained.",
   stats: { urgent: 5, open: 5, forecast: 3, excluded: 4 },
   deadlines: [
     { date: "2026-10-23", label: "SG[Nigeria] × ASEICC scholarship closes", hint: "Local space conference pass", status: "urgent" },
@@ -273,7 +273,7 @@ window.BOARD = {
     }
   ],
   nextSteps: [
-    { when: "Before 23 Oct", what: "Apply for SG[Nigeria] × ASEICC Delegate Scholarship (join SGAC first)." },
+    { when: "Today (23 Oct)", what: "Apply for SG[Nigeria] × ASEICC Delegate Scholarship before 23:59 WAT (join SGAC first)." },
     { when: "Before 25 Oct", what: "If at OAU, submit Yinka & Pelumi application with transcript, essay, and character letter." },
     { when: "15–31 Oct", what: "Submit AIAA DBF proposal if forming team. Join AIAA and prepare Denise Ponchak materials." },
     { when: "Before 1 Nov", what: "Submit EPFL E3 application and Open Doors portfolio." },
