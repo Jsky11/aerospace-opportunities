@@ -1,11 +1,10 @@
 window.BOARD = {
-  updated: "2026-10-23",
+  updated: "2026-10-24",
   timezone: "Africa/Lagos",
   profile: "Nigerian Mechanical Engineering undergraduate, 300 level, aerospace / space focus",
-  summary: "INTERNATIONAL: AIAA DBF proposals close 31 Oct (urgent). EPFL E3 and Open Doors close 1 Nov. KAUST VSRP / IAESTE / AIAA scholarships open. LOCAL: SG[Nigeria] ASEICC closes today (23 Oct); Yinka & Pelumi closes 25 Oct; Carewave 9 Nov. Forecasts retained.",
-  stats: { urgent: 5, open: 5, forecast: 3, excluded: 4 },
+  summary: "INTERNATIONAL: AIAA DBF proposals close 31 Oct (urgent). EPFL E3 and Open Doors close 1 Nov. KAUST VSRP / IAESTE / AIAA scholarships open. LOCAL: Yinka & Pelumi closes 25 Oct; Carewave 9 Nov. SG closed; forecasts retained.",
+  stats: { urgent: 4, open: 5, forecast: 4, excluded: 4 },
   deadlines: [
-    { date: "2026-10-23", label: "SG[Nigeria] × ASEICC scholarship closes", hint: "Local space conference pass", status: "urgent" },
     { date: "2026-10-25", label: "Yinka & Pelumi Foundation Scholars closes", hint: "OAU Mech/EE local scholarship", status: "urgent" },
     { date: "2026-10-31", label: "AIAA DBF proposals close", hint: "International aircraft competition", status: "urgent" },
     { date: "2026-11-01", label: "EPFL E3 + Open Doors close", hint: "Two international deadlines", status: "urgent" },
@@ -47,17 +46,17 @@ window.BOARD = {
     {
       id: "sg-nigeria-aseicc",
       name: "SG[Nigeria] × ASEICC Delegate Scholarship",
-      status: "urgent",
+      status: "forecast",
       type: "Local space conference scholarship",
       destination: "Nigeria (Abuja, NASRDA)",
       level: "Students and young professionals 18–35 (SGAC members)",
-      covers: "Full access pass to SG[Nigeria] and ASEIC Conference 23–27 Nov 2026. Travel and accommodation not covered.",
+      covers: "Full access pass to SG[Nigeria] and ASEIC Conference. Travel and accommodation not covered.",
       eligibility: "SGAC members. Nigerian/African students and young professionals interested in space. Mech/Aerospace relevant.",
-      deadline: "23 October 2026 (23:59 WAT)",
+      deadline: "2026 cycle closed 23 October 2026. Next expected around similar conference window.",
       link: "https://spacegeneration.org/sg-nigeria-aseicc-scholarship",
       linkLabel: "Official SGAC scholarship page",
       aerospace: "Direct networking in African space community at NASRDA; space economy and innovation focus.",
-      next: "Join SGAC if needed, prepare CV and 500-word impact pitch. Submit by 23 Oct."
+      next: "Monitor for next cycle. Kept active on the board as forecast."
     },
     {
       id: "yinka-pelumi",
@@ -273,9 +272,8 @@ window.BOARD = {
     }
   ],
   nextSteps: [
-    { when: "Today (23 Oct)", what: "Apply for SG[Nigeria] × ASEICC Delegate Scholarship before 23:59 WAT (join SGAC first)." },
     { when: "Before 25 Oct", what: "If at OAU, submit Yinka & Pelumi application with transcript, essay, and character letter." },
-    { when: "15–31 Oct", what: "Submit AIAA DBF proposal if forming team. Join AIAA and prepare Denise Ponchak materials." },
+    { when: "Before 31 Oct", what: "Submit AIAA DBF proposal if forming team. Join AIAA and prepare Denise Ponchak materials." },
     { when: "Before 1 Nov", what: "Submit EPFL E3 application and Open Doors portfolio." },
     { when: "Before 8–9 Nov", what: "Submit IEEE WIE (if eligible) and Carewave applications." },
     { when: "Ongoing", what: "Apply to KAUST VSRP. Contact IAESTE Nigeria. Keep passport ready. Monitor forecast cycles." }
