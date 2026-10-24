@@ -2,10 +2,11 @@ window.BOARD = {
   updated: "2026-10-24",
   timezone: "Africa/Lagos",
   profile: "Nigerian Mechanical Engineering undergraduate, 300 level, aerospace / space focus",
-  summary: "INTERNATIONAL: AIAA DBF proposals close 31 Oct (urgent). EPFL E3 and Open Doors close 1 Nov. KAUST VSRP / IAESTE / AIAA scholarships open. LOCAL: Yinka & Pelumi closes 25 Oct; Carewave 9 Nov. SG closed; forecasts retained.",
-  stats: { urgent: 4, open: 5, forecast: 4, excluded: 4 },
+  summary: "INTERNATIONAL: AIAA DBF proposals close 31 Oct (urgent). EPFL E3 and Open Doors close 1 Nov. KAUST VSRP / IAESTE / AIAA scholarships open. LOCAL: SG[Nigeria] extended to 30 Oct; Yinka & Pelumi (OAU-only) closes 25 Oct; Carewave 9 Nov. Forecasts retained.",
+  stats: { urgent: 5, open: 5, forecast: 3, excluded: 4 },
   deadlines: [
     { date: "2026-10-25", label: "Yinka & Pelumi Foundation Scholars closes", hint: "OAU Mech/EE local scholarship", status: "urgent" },
+    { date: "2026-10-30", label: "SG[Nigeria] × ASEICC closes (extended)", hint: "Local space conference pass", status: "urgent" },
     { date: "2026-10-31", label: "AIAA DBF proposals close", hint: "International aircraft competition", status: "urgent" },
     { date: "2026-11-01", label: "EPFL E3 + Open Doors close", hint: "Two international deadlines", status: "urgent" },
     { date: "2026-11-08", label: "IEEE WIE International closes", hint: "Female, high GPA, 2yr WIE", status: "open" },
@@ -46,17 +47,17 @@ window.BOARD = {
     {
       id: "sg-nigeria-aseicc",
       name: "SG[Nigeria] × ASEICC Delegate Scholarship",
-      status: "forecast",
+      status: "urgent",
       type: "Local space conference scholarship",
       destination: "Nigeria (Abuja, NASRDA)",
       level: "Students and young professionals 18–35 (SGAC members)",
-      covers: "Full access pass to SG[Nigeria] and ASEIC Conference. Travel and accommodation not covered.",
+      covers: "Full access pass to SG[Nigeria] and ASEIC Conference 23–27 Nov 2026. Travel and accommodation not covered.",
       eligibility: "SGAC members. Nigerian/African students and young professionals interested in space. Mech/Aerospace relevant.",
-      deadline: "2026 cycle closed 23 October 2026. Next expected around similar conference window.",
+      deadline: "EXTENDED to 30 October 2026 (previously 23 Oct)",
       link: "https://spacegeneration.org/sg-nigeria-aseicc-scholarship",
       linkLabel: "Official SGAC scholarship page",
       aerospace: "Direct networking in African space community at NASRDA; space economy and innovation focus.",
-      next: "Monitor for next cycle. Kept active on the board as forecast."
+      next: "Join SGAC if needed, prepare CV and 500-word impact pitch. Submit by 30 Oct."
     },
     {
       id: "yinka-pelumi",
@@ -66,12 +67,12 @@ window.BOARD = {
       destination: "Nigeria (OAU cash award)",
       level: "OAU undergraduates in Mechanical or Electrical Engineering (100–500 level)",
       covers: "Approx ₦500,000 support (tuition ₦200,000, accommodation ₦200,000, materials ₦50,000/semester) + mentorship.",
-      eligibility: "OAU students only in Mech or EE. Not current beneficiaries of other scholarships. Nigerian citizens.",
+      eligibility: "OAU students only in Mech or EE. Not current beneficiaries of other scholarships. Nigerian citizens. (UNILAG students not eligible.)",
       deadline: "25 October 2026",
       link: "https://ypscholarshipfoundation.com/",
       linkLabel: "Official foundation page",
-      aerospace: "Local bridge funding for study costs that can free resources for passport, visa, or internship applications.",
-      next: "Prepare transcript (or Post-UTME), personal essay, and signed character attestation. Submit by 25 Oct."
+      aerospace: "Local bridge funding for study costs that can free resources for passport, visa, or internship applications (OAU only).",
+      next: "If at OAU: prepare transcript, personal essay, and signed character attestation. Submit by 25 Oct. Otherwise skip."
     },
     {
       id: "open-doors",
@@ -272,10 +273,11 @@ window.BOARD = {
     }
   ],
   nextSteps: [
-    { when: "Before 25 Oct", what: "If at OAU, submit Yinka & Pelumi application with transcript, essay, and character letter." },
-    { when: "Before 31 Oct", what: "Submit AIAA DBF proposal if forming team. Join AIAA and prepare Denise Ponchak materials." },
-    { when: "Before 1 Nov", what: "Submit EPFL E3 application and Open Doors portfolio." },
-    { when: "Before 8–9 Nov", what: "Submit IEEE WIE (if eligible) and Carewave applications." },
+    { when: "By 25 Oct", what: "If at OAU, submit Yinka & Pelumi application with transcript, essay, and character letter." },
+    { when: "By 30 Oct", what: "Submit SG[Nigeria] × ASEICC application (deadline extended from 23 Oct)." },
+    { when: "By 31 Oct", what: "Submit AIAA DBF proposal if forming team. Join AIAA and prepare Denise Ponchak materials." },
+    { when: "By 1 Nov", what: "Submit EPFL E3 application and Open Doors portfolio." },
+    { when: "By 8–9 Nov", what: "Submit IEEE WIE (if eligible) and Carewave applications." },
     { when: "Ongoing", what: "Apply to KAUST VSRP. Contact IAESTE Nigeria. Keep passport ready. Monitor forecast cycles." }
   ]
 };
