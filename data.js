@@ -1,11 +1,10 @@
 window.BOARD = {
-  updated: "2026-10-25",
+  updated: "2026-10-26",
   timezone: "Africa/Lagos",
   profile: "Nigerian Mechanical Engineering undergraduate, 300 level, aerospace / space focus",
-  summary: "INTERNATIONAL: AIAA DBF proposals close 31 Oct (urgent). EPFL E3 and Open Doors close 1 Nov. KAUST VSRP / IAESTE / AIAA scholarships open. LOCAL: SG[Nigeria] extended to 30 Oct; Yinka & Pelumi (OAU-only) closes today 25 Oct; Carewave 9 Nov. Forecasts retained. No major new openings.",
-  stats: { urgent: 5, open: 5, forecast: 3, excluded: 4 },
+  summary: "INTERNATIONAL: AIAA DBF proposals close 31 Oct (urgent). EPFL E3 and Open Doors close 1 Nov. KAUST VSRP / IAESTE / AIAA scholarships open. LOCAL: SG[Nigeria] extended to 30 Oct; Carewave 9 Nov. Yinka & Pelumi (OAU-only) closed 25 Oct \u2014 moved to forecast. Forecasts retained. No major new openings.",
+  stats: { urgent: 4, open: 5, forecast: 4, excluded: 4 },
   deadlines: [
-    { date: "2026-10-25", label: "Yinka & Pelumi Foundation Scholars closes", hint: "OAU Mech/EE local scholarship", status: "urgent" },
     { date: "2026-10-30", label: "SG[Nigeria] \u00d7 ASEICC closes (extended)", hint: "Local space conference pass", status: "urgent" },
     { date: "2026-10-31", label: "AIAA DBF proposals close", hint: "International aircraft competition", status: "urgent" },
     { date: "2026-11-01", label: "EPFL E3 + Open Doors close", hint: "Two international deadlines", status: "urgent" },
@@ -58,21 +57,6 @@ window.BOARD = {
       linkLabel: "Official SGAC scholarship page",
       aerospace: "Direct networking in African space community at NASRDA; space economy and innovation focus.",
       next: "Join SGAC if needed, prepare CV and 500-word impact pitch. Submit by 30 Oct."
-    },
-    {
-      id: "yinka-pelumi",
-      name: "Yinka & Pelumi Foundation Scholars Programme 2026",
-      status: "urgent",
-      type: "Local undergraduate scholarship",
-      destination: "Nigeria (OAU cash award)",
-      level: "OAU undergraduates in Mechanical or Electrical Engineering (100\u2013500 level)",
-      covers: "Approx \u20a6500,000 support (tuition \u20a6200,000, accommodation \u20a6200,000, materials \u20a650,000/semester) + mentorship.",
-      eligibility: "OAU students only in Mech or EE. Not current beneficiaries of other scholarships. Nigerian citizens. (UNILAG students not eligible.)",
-      deadline: "25 October 2026",
-      link: "https://ypscholarshipfoundation.com/",
-      linkLabel: "Official foundation page",
-      aerospace: "Local bridge funding for study costs that can free resources for passport, visa, or internship applications (OAU only).",
-      next: "If at OAU: prepare transcript, personal essay, and signed character attestation. Submit by 25 Oct. Otherwise skip."
     },
     {
       id: "open-doors",
@@ -163,6 +147,21 @@ window.BOARD = {
       linkLabel: "AIAA scholarships page",
       aerospace: "Direct aerospace society support; Denise Ponchak targets digital avionics.",
       next: "Join AIAA as student member now. Prepare essay and recommendation for the open window. Prioritize Denise Ponchak."
+    },
+    {
+      id: "yinka-pelumi",
+      name: "Yinka & Pelumi Foundation Scholars Programme 2026",
+      status: "forecast",
+      type: "Local undergraduate scholarship",
+      destination: "Nigeria (OAU cash award)",
+      level: "OAU undergraduates in Mechanical or Electrical Engineering (100\u2013500 level)",
+      covers: "Approx \u20a6500,000 support (tuition \u20a6200,000, accommodation \u20a6200,000, materials \u20a650,000/semester) + mentorship.",
+      eligibility: "OAU students only in Mech or EE. Not current beneficiaries of other scholarships. Nigerian citizens. (UNILAG students not eligible.)",
+      deadline: "2026 cycle closed 25 October 2026. Next expected ~October 2027",
+      link: "https://ypscholarshipfoundation.com/",
+      linkLabel: "Official foundation page",
+      aerospace: "Local bridge funding for study costs that can free resources for passport, visa, or internship applications (OAU only).",
+      next: "Monitor for next annual cycle. Kept active on the board as forecast."
     },
     {
       id: "gabriel-ezenri",
@@ -273,7 +272,6 @@ window.BOARD = {
     }
   ],
   nextSteps: [
-    { when: "By 25 Oct", what: "If at OAU, submit Yinka & Pelumi application with transcript, essay, and character letter." },
     { when: "By 30 Oct", what: "Submit SG[Nigeria] \u00d7 ASEICC application (deadline extended from 23 Oct)." },
     { when: "By 31 Oct", what: "Submit AIAA DBF proposal if forming team. Join AIAA and prepare Denise Ponchak materials." },
     { when: "By 1 Nov", what: "Submit EPFL E3 application and Open Doors portfolio." },
