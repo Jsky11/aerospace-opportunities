@@ -1,16 +1,16 @@
 window.BOARD = {
-  updated: "2026-10-26",
+  updated: "2026-10-27",
   timezone: "Africa/Lagos",
   profile: "Nigerian Mechanical Engineering undergraduate, 300 level, aerospace / space focus",
-  summary: "INTERNATIONAL: AIAA DBF proposals close 31 Oct (urgent). EPFL E3 and Open Doors close 1 Nov. KAUST VSRP / IAESTE / AIAA scholarships open. LOCAL: SG[Nigeria] extended to 30 Oct; Carewave 9 Nov. Yinka & Pelumi (OAU-only) closed 25 Oct \u2014 moved to forecast. Forecasts retained. No major new openings.",
-  stats: { urgent: 4, open: 5, forecast: 4, excluded: 4 },
+  summary: "INTERNATIONAL: AIAA DBF proposals close 31 Oct (urgent). EPFL E3 and Open Doors close 1 Nov. IEEE WIE closes 8 Nov; Carewave 9 Nov (both now urgent). KAUST VSRP / IAESTE / AIAA scholarships remain open. LOCAL: SG[Nigeria] extended to 30 Oct (urgent). Yinka & Pelumi closed \u2014 forecast. Forecasts retained. No major new openings.",
+  stats: { urgent: 6, open: 3, forecast: 4, excluded: 4 },
   deadlines: [
     { date: "2026-10-30", label: "SG[Nigeria] \u00d7 ASEICC closes (extended)", hint: "Local space conference pass", status: "urgent" },
     { date: "2026-10-31", label: "AIAA DBF proposals close", hint: "International aircraft competition", status: "urgent" },
     { date: "2026-11-01", label: "EPFL E3 + Open Doors close", hint: "Two international deadlines", status: "urgent" },
-    { date: "2026-11-08", label: "IEEE WIE International closes", hint: "Female, high GPA, 2yr WIE", status: "open" },
-    { date: "2026-11-09", label: "Carewave Aspire closes", hint: "Local \u20a6500k bridge", status: "open" },
-    { date: "2027-01-31", label: "AIAA scholarships close", hint: "Yearly cycle", status: "forecast" }
+    { date: "2026-11-08", label: "IEEE WIE International closes", hint: "Female, high GPA, 2yr WIE", status: "urgent" },
+    { date: "2026-11-09", label: "Carewave Aspire closes", hint: "Local \u20a6500k bridge", status: "urgent" },
+    { date: "2027-01-31", label: "AIAA scholarships close", hint: "Yearly cycle", status: "open" }
   ],
   opportunities: [
     {
@@ -74,24 +74,9 @@ window.BOARD = {
       next: "Register and prepare motivation letter + academic portfolio for Engineering & Technology track."
     },
     {
-      id: "kaust-vsrp",
-      name: "KAUST Visiting Student Research Program (VSRP)",
-      status: "open",
-      type: "International research internship",
-      destination: "Saudi Arabia (KAUST)",
-      level: "3rd-year+ BSc or Master\u2019s in STEM (Mechanical Engineering eligible)",
-      covers: "USD 1,000 monthly stipend, private room, return airfare, health insurance, lab access. 3\u20136 months.",
-      eligibility: "All nationalities. GPA \u22653.5/4.0 or equivalent. English proficiency. Open year-round. Arrival minimum 6 weeks after submission.",
-      deadline: "Open all year (apply anytime)",
-      link: "https://admissions.kaust.edu.sa/study/internships",
-      linkLabel: "Official KAUST internships page",
-      aerospace: "Mechanical engineering and related research projects available; strong research experience bridge into aerospace skills.",
-      next: "Browse available projects, prepare transcripts, CV, statement of purpose, recommendation and passport. Apply early."
-    },
-    {
       id: "ieee-wie",
       name: "IEEE WIE International Scholarship 2026",
-      status: "open",
+      status: "urgent",
       type: "International scholarship",
       destination: "Cash award",
       level: "Undergraduate engineering",
@@ -106,7 +91,7 @@ window.BOARD = {
     {
       id: "carewave",
       name: "Carewave ASPIRE Scholarship Programme (CASP) 2026",
-      status: "open",
+      status: "urgent",
       type: "Local undergraduate scholarship",
       destination: "Nigeria (cash award)",
       level: "Nigerian undergrads (typically 18-25) at eligible Federal Universities",
@@ -117,6 +102,21 @@ window.BOARD = {
       linkLabel: "Carewave portal (verify official)",
       aerospace: "Local bridge funding for travel document or internship costs.",
       next: "Create account and upload required documents before 9 November."
+    },
+    {
+      id: "kaust-vsrp",
+      name: "KAUST Visiting Student Research Program (VSRP)",
+      status: "open",
+      type: "International research internship",
+      destination: "Saudi Arabia (KAUST)",
+      level: "3rd-year+ BSc or Master\u2019s in STEM (Mechanical Engineering eligible)",
+      covers: "USD 1,000 monthly stipend, private room, return airfare, health insurance, lab access. 3\u20136 months.",
+      eligibility: "All nationalities. GPA \u22653.5/4.0 or equivalent. English proficiency. Open year-round. Arrival minimum 6 weeks after submission.",
+      deadline: "Open all year (apply anytime)",
+      link: "https://admissions.kaust.edu.sa/study/internships",
+      linkLabel: "Official KAUST internships page",
+      aerospace: "Mechanical engineering and related research projects available; strong research experience bridge into aerospace skills.",
+      next: "Browse available projects, prepare transcripts, CV, statement of purpose, recommendation and passport. Apply early."
     },
     {
       id: "iaeste",
@@ -272,7 +272,7 @@ window.BOARD = {
     }
   ],
   nextSteps: [
-    { when: "By 30 Oct", what: "Submit SG[Nigeria] \u00d7 ASEICC application (deadline extended from 23 Oct)." },
+    { when: "By 30 Oct", what: "Submit SG[Nigeria] \u00d7 ASEICC application (deadline extended)." },
     { when: "By 31 Oct", what: "Submit AIAA DBF proposal if forming team. Join AIAA and prepare Denise Ponchak materials." },
     { when: "By 1 Nov", what: "Submit EPFL E3 application and Open Doors portfolio." },
     { when: "By 8\u20139 Nov", what: "Submit IEEE WIE (if eligible) and Carewave applications." },
