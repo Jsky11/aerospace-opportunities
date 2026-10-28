@@ -1,8 +1,8 @@
 window.BOARD = {
-  updated: "2026-10-27",
+  updated: "2026-10-28",
   timezone: "Africa/Lagos",
   profile: "Nigerian Mechanical Engineering undergraduate, 300 level, aerospace / space focus",
-  summary: "INTERNATIONAL: AIAA DBF proposals close 31 Oct (urgent). EPFL E3 and Open Doors close 1 Nov. IEEE WIE closes 8 Nov; Carewave 9 Nov (both now urgent). KAUST VSRP / IAESTE / AIAA scholarships remain open. LOCAL: SG[Nigeria] extended to 30 Oct (urgent). Yinka & Pelumi closed \u2014 forecast. Forecasts retained. No major new openings.",
+  summary: "INTERNATIONAL: AIAA DBF proposals close 31 Oct (urgent). EPFL E3 and Open Doors close 1 Nov. IEEE WIE closes 8 Nov; Carewave 9 Nov (both urgent). KAUST VSRP / IAESTE / AIAA scholarships remain open. LOCAL: SG[Nigeria] extended to 30 Oct (urgent). Forecasts retained. No major new openings verified.",
   stats: { urgent: 6, open: 3, forecast: 4, excluded: 4 },
   deadlines: [
     { date: "2026-10-30", label: "SG[Nigeria] \u00d7 ASEICC closes (extended)", hint: "Local space conference pass", status: "urgent" },
