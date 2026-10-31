@@ -1,11 +1,10 @@
 window.BOARD = {
-  updated: "2026-10-30",
+  updated: "2026-10-31",
   timezone: "Africa/Lagos",
   profile: "Nigerian Mechanical Engineering undergraduate, 300 level, aerospace / space focus",
-  summary: "INTERNATIONAL: AIAA DBF proposals close 31 Oct (urgent). EPFL E3 and Open Doors close 1 Nov. IEEE WIE closes 8 Nov; Carewave 9 Nov (both urgent). KAUST VSRP / IAESTE / AIAA scholarships remain open. LOCAL: SG[Nigeria] extended to 30 Oct (urgent). Forecasts retained. No major new openings verified.",
-  stats: { urgent: 6, open: 3, forecast: 4, excluded: 4 },
+  summary: "INTERNATIONAL: AIAA DBF proposals close today (31 Oct, urgent). EPFL E3 and Open Doors close 1 Nov. IEEE WIE closes 8 Nov; Carewave 9 Nov (both urgent). KAUST VSRP / IAESTE / AIAA scholarships remain open. LOCAL: SG[Nigeria] closed 30 Oct (now forecast). Forecasts retained. No major new openings verified.",
+  stats: { urgent: 5, open: 3, forecast: 5, excluded: 4 },
   deadlines: [
-    { date: "2026-10-30", label: "SG[Nigeria] \u00d7 ASEICC closes (extended)", hint: "Local space conference pass", status: "urgent" },
     { date: "2026-10-31", label: "AIAA DBF proposals close", hint: "International aircraft competition", status: "urgent" },
     { date: "2026-11-01", label: "EPFL E3 + Open Doors close", hint: "Two international deadlines", status: "urgent" },
     { date: "2026-11-08", label: "IEEE WIE International closes", hint: "Female, high GPA, 2yr WIE", status: "urgent" },
@@ -42,21 +41,6 @@ window.BOARD = {
       linkLabel: "Official EPFL E3 page",
       aerospace: "Direct research experience in mechanical, materials, microengineering or related labs at a top European engineering school \u2014 strong aerospace skill and network bridge.",
       next: "Prepare CV, transcript, statement of purpose, preferred lab areas and reference. Submit before 1 Nov."
-    },
-    {
-      id: "sg-nigeria-aseicc",
-      name: "SG[Nigeria] \u00d7 ASEICC Delegate Scholarship",
-      status: "urgent",
-      type: "Local space conference scholarship",
-      destination: "Nigeria (Abuja, NASRDA)",
-      level: "Students and young professionals 18\u201335 (SGAC members)",
-      covers: "Full access pass to SG[Nigeria] and ASEIC Conference 23\u201327 Nov 2026. Travel and accommodation not covered.",
-      eligibility: "SGAC members. Nigerian/African students and young professionals interested in space. Mech/Aerospace relevant.",
-      deadline: "EXTENDED to 30 October 2026 (previously 23 Oct)",
-      link: "https://spacegeneration.org/sg-nigeria-aseicc-scholarship",
-      linkLabel: "Official SGAC scholarship page",
-      aerospace: "Direct networking in African space community at NASRDA; space economy and innovation focus.",
-      next: "Join SGAC if needed, prepare CV and 500-word impact pitch. Submit by 30 Oct."
     },
     {
       id: "open-doors",
@@ -147,6 +131,21 @@ window.BOARD = {
       linkLabel: "AIAA scholarships page",
       aerospace: "Direct aerospace society support; Denise Ponchak targets digital avionics.",
       next: "Join AIAA as student member now. Prepare essay and recommendation for the open window. Prioritize Denise Ponchak."
+    },
+    {
+      id: "sg-nigeria-aseicc",
+      name: "SG[Nigeria] \u00d7 ASEICC Delegate Scholarship",
+      status: "forecast",
+      type: "Local space conference scholarship",
+      destination: "Nigeria (Abuja, NASRDA)",
+      level: "Students and young professionals 18\u201335 (SGAC members)",
+      covers: "Full access pass to SG[Nigeria] and ASEIC Conference 23\u201327 Nov 2026. Travel and accommodation not covered.",
+      eligibility: "SGAC members. Nigerian/African students and young professionals interested in space. Mech/Aerospace relevant.",
+      deadline: "Closed 30 October 2026 (extended). Next expected ~October 2027",
+      link: "https://spacegeneration.org/sg-nigeria-aseicc-scholarship",
+      linkLabel: "Official SGAC scholarship page",
+      aerospace: "Direct networking in African space community at NASRDA; space economy and innovation focus.",
+      next: "Monitor for next annual cycle. Join SGAC if not already. Kept active as forecast."
     },
     {
       id: "yinka-pelumi",
@@ -272,10 +271,9 @@ window.BOARD = {
     }
   ],
   nextSteps: [
-    { when: "By 30 Oct", what: "Submit SG[Nigeria] \u00d7 ASEICC application (deadline extended)." },
     { when: "By 31 Oct", what: "Submit AIAA DBF proposal if forming team. Join AIAA and prepare Denise Ponchak materials." },
     { when: "By 1 Nov", what: "Submit EPFL E3 application and Open Doors portfolio." },
     { when: "By 8\u20139 Nov", what: "Submit IEEE WIE (if eligible) and Carewave applications." },
-    { when: "Ongoing", what: "Apply to KAUST VSRP. Contact IAESTE Nigeria. Keep passport ready. Monitor forecast cycles." }
+    { when: "Ongoing", what: "Apply to KAUST VSRP. Contact IAESTE Nigeria. Keep passport ready. Monitor forecast cycles including SG[Nigeria] next year." }
   ]
 };
