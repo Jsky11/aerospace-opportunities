@@ -2,14 +2,15 @@ window.BOARD = {
   updated: "2026-11-01",
   timezone: "Africa/Lagos",
   profile: "Nigerian Mechanical Engineering undergraduate, 300 level, aerospace / space focus",
-  summary: "INTERNATIONAL: EPFL E3 and Open Doors close TODAY (1 Nov). Carewave closes 9 Nov. KAUST VSRP, IAESTE, AIAA scholarships, EAA, SAE Aero Design remain open. New radar: University faculty research outreach (US/UK/Canada/Aus/NZ – direct contact, highest realistic path for internationals), GE Aerospace UK placements (forecast), Dawn Aerospace NZ summer (forecast). Citizenship-restricted programs (most NSF REUs, NASA, Mitacs Globalink, Australian local-enrollment programs) excluded or low-chance. LOCAL: Carewave urgent. Forecasts retained.",
-  stats: { urgent: 3, open: 6, forecast: 8, excluded: 7 },
+  summary: "INTERNATIONAL: EPFL E3 and Open Doors close TODAY (1 Nov). Carewave closes 9 Nov (urgent). KAUST VSRP, IAESTE, AIAA scholarships (Denise Ponchak), EAA, SAE Aero Design remain open. Elevated: University faculty research outreach (US/UK/Canada/Aus/NZ – direct contact, highest realistic path for internationals), GE Aerospace UK placements (forecast), Dawn Aerospace NZ summer (forecast), RAeS Futures (forecast). Citizenship-restricted programs (most NSF REUs, NASA OSTEM, Mitacs Globalink, Australian local-enrollment) excluded. LOCAL: Carewave urgent. Forecasts retained. Female-only items excluded.",
+  stats: { urgent: 3, open: 6, forecast: 9, excluded: 7 },
   deadlines: [
     { date: "2026-11-01", label: "EPFL E3 + Open Doors close", hint: "Two international deadlines", status: "urgent" },
     { date: "2026-11-09", label: "Carewave Aspire closes", hint: "Local ₦500k bridge", status: "urgent" },
     { date: "2026-11-30", label: "SAE Aero Design registration closes", hint: "Team competition", status: "open" },
     { date: "2026-12-16", label: "EAA Post-Secondary scholarships close", hint: "US/Canada study support", status: "open" },
     { date: "2027-01-31", label: "AIAA scholarships close", hint: "Yearly cycle", status: "open" },
+    { date: "2027-05-06", label: "RAeS Futures Scholarship opens (typical)", hint: "Forecast", status: "forecast" },
     { date: "2027-06-30", label: "Dawn Aerospace NZ summer internships (typical)", hint: "Forecast cycle", status: "forecast" }
   ],
   opportunities: [
@@ -179,6 +180,21 @@ window.BOARD = {
       next: "Prepare portfolio of projects. Watch for 2027 cycle announcement around May–June."
     },
     {
+      id: "raes-futures",
+      name: "RAeS Futures Scholarship",
+      status: "forecast",
+      type: "International scholarship / project funding",
+      destination: "Flexible (internship, training, or project support)",
+      level: "Individuals and teams aspiring to aerospace careers",
+      covers: "Variable awards (typically £3,000–£6,000; max £10,000) for internships, training, or projects.",
+      eligibility: "RAeS membership required for individuals. Demonstrate financial need and commitment to aerospace. Open to all nationalities in principle.",
+      deadline: "Opens ~6 May, closes ~5 June annually. Next expected May–June 2027",
+      link: "https://www.aerosociety.com/careers-education/scholarships-bursaries/",
+      linkLabel: "RAeS Scholarships & Bursaries",
+      aerospace: "Direct support for aerospace employability activities (internships, training, projects).",
+      next: "Join RAeS student membership. Monitor for 2027 opening in May."
+    },
+    {
       id: "aiaa-dbf",
       name: "AIAA Design/Build/Fly 2027",
       status: "forecast",
@@ -279,7 +295,7 @@ window.BOARD = {
       level: "Undergraduate/graduate",
       covers: "Paid stipend",
       eligibility: "U.S. citizenship required.",
-      deadline: "Annual cycles (e.g. Summer ~Feb)",
+      deadline: "Annual cycles (e.g. Summer ~Feb/Mar)",
       link: "https://www.nasa.gov/learning-resources/internship-programs",
       linkLabel: "NASA internships",
       aerospace: "Direct NASA experience.",
@@ -308,12 +324,12 @@ window.BOARD = {
       destination: "Cash award",
       level: "Undergraduate engineering",
       covers: "US$2,500",
-      eligibility: "Female only. IEEE WIE Student Member for at least second consecutive year. GPA ≥3.7/4.0.",
+      eligibility: "Female only. IEEE WIE Student Member for at least second consecutive year. GPA ≥3.7.",
       deadline: "8 November 2026",
       link: "https://wie.ieee.org/grants-scholarships/international-scholarship/",
-      linkLabel: "IEEE WIE International Scholarship",
+      linkLabel: "IEEE WIE",
       aerospace: "Bridge funding.",
-      next: "Excluded: female-only opportunity does not apply."
+      next: "Excluded: female-only opportunity."
     },
     {
       id: "mitacs-globalink",
@@ -346,34 +362,34 @@ window.BOARD = {
       next: "Nationality and level restrictions apply."
     },
     {
-      id: "sydney-vacation",
-      name: "University of Sydney Engineering Vacation Research Internship",
+      id: "nsf-reu",
+      name: "Most NSF REU Sites (e.g. Penn State Power & Propulsion)",
       status: "excluded",
       type: "Research internship",
-      destination: "Australia (Sydney)",
+      destination: "US universities",
       level: "Undergraduate",
-      covers: "$500/week scholarship",
-      eligibility: "Must be enrolled at University of Sydney or another Australian university (Australian citizen/PR for external).",
-      deadline: "15 Sep – 4 Oct 2026 for Dec 2026–Feb 2027",
-      link: "https://www.sydney.edu.au/engineering/study/scholarships/engineering-vacation-research-internship-program.html",
-      linkLabel: "Sydney Engineering Vacation",
-      aerospace: "Aeronautical and mechanical projects available.",
-      next: "Requires Australian enrollment — not currently eligible."
+      covers: "Stipend + housing often",
+      eligibility: "US citizenship or permanent residency required for vast majority of NSF REU Sites.",
+      deadline: "Typically Feb",
+      link: "https://www.nsf.gov/crssprgm/reu/",
+      linkLabel: "NSF REU",
+      aerospace: "Strong research experience when eligible.",
+      next: "Excluded for Nigerian citizens. Use faculty outreach instead."
     },
     {
-      id: "csiro-vacation",
-      name: "CSIRO Undergraduate Vacation Studentships (Space & Astronomy)",
+      id: "australian-vacation",
+      name: "Australian University Vacation Research Programs (e.g. CSIRO Space & Astronomy)",
       status: "excluded",
       type: "Research internship",
-      destination: "Australia (various)",
+      destination: "Australia",
       level: "Undergraduate",
-      covers: "Stipend + possible travel assistance",
-      eligibility: "Enrolled at Australian tertiary institution + full work rights (no sponsorship).",
-      deadline: "~10 August for Nov–Feb placement",
-      link: "https://www.csiro.au/en/careers/Scholarships-student-opportunities/Undergraduate-Studentships/Undergraduate-vacation-studentships",
-      linkLabel: "CSIRO Vacation Studentships",
-      aerospace: "Space & Astronomy projects.",
-      next: "Requires Australian enrollment and work rights — not currently eligible."
+      covers: "Stipend",
+      eligibility: "Enrollment at Australian institution + full work rights required.",
+      deadline: "Varies",
+      link: "https://www.csiro.au/",
+      linkLabel: "CSIRO",
+      aerospace: "Space research projects.",
+      next: "Not accessible to external Nigerian students."
     }
   ],
   nextSteps: [
@@ -381,6 +397,6 @@ window.BOARD = {
     { when: "By 9 Nov", what: "Submit Carewave application." },
     { when: "Ongoing / this week", what: "Begin systematic faculty outreach emails for 2027 summer research. Contact IAESTE Nigeria. Join AIAA and prepare Denise Ponchak materials. Assess EAA and SAE Aero Design pathways. Keep passport ready." },
     { when: "Autumn 2027", what: "Monitor GE Aerospace UK placements opening." },
-    { when: "May–June 2027", what: "Watch for Dawn Aerospace NZ summer internship call." }
+    { when: "May–June 2027", what: "Watch for RAeS Futures and Dawn Aerospace NZ summer internship call." }
   ]
 };
