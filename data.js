@@ -2,12 +2,13 @@ window.BOARD = {
   updated: "2026-11-01",
   timezone: "Africa/Lagos",
   profile: "Nigerian Mechanical Engineering undergraduate, 300 level, aerospace / space focus",
-  summary: "INTERNATIONAL: EPFL E3 and Open Doors close TODAY (1 Nov, urgent). IEEE WIE closes 8 Nov; Carewave 9 Nov (both urgent). KAUST VSRP / IAESTE / AIAA scholarships remain open. AIAA DBF closed 31 Oct (now forecast). LOCAL: Carewave urgent. Forecasts retained. No major new openings verified.",
-  stats: { urgent: 4, open: 3, forecast: 6, excluded: 4 },
+  summary: "INTERNATIONAL: EPFL E3 and Open Doors close TODAY (1 Nov, urgent). Carewave closes 9 Nov (urgent). KAUST VSRP / IAESTE / AIAA scholarships / EAA post-secondary / SAE Aero Design remain open. AIAA DBF closed 31 Oct (forecast). IEEE WIE excluded (female-only). LOCAL: Carewave urgent. Forecasts retained. No major new openings verified.",
+  stats: { urgent: 3, open: 5, forecast: 6, excluded: 5 },
   deadlines: [
     { date: "2026-11-01", label: "EPFL E3 + Open Doors close", hint: "Two international deadlines", status: "urgent" },
-    { date: "2026-11-08", label: "IEEE WIE International closes", hint: "Female, high GPA, 2yr WIE", status: "urgent" },
     { date: "2026-11-09", label: "Carewave Aspire closes", hint: "Local \u20a6500k bridge", status: "urgent" },
+    { date: "2026-11-30", label: "SAE Aero Design registration closes", hint: "Team competition", status: "open" },
+    { date: "2026-12-16", label: "EAA Post-Secondary scholarships close", hint: "US/Canada study support", status: "open" },
     { date: "2027-01-31", label: "AIAA scholarships close", hint: "Yearly cycle", status: "open" }
   ],
   opportunities: [
@@ -40,21 +41,6 @@ window.BOARD = {
       linkLabel: "Official Open Doors portal",
       aerospace: "Strong exposure to aerospace engineering, propulsion, and space systems in Russian universities.",
       next: "Register and prepare motivation letter + academic portfolio for Engineering & Technology track. Submit today."
-    },
-    {
-      id: "ieee-wie",
-      name: "IEEE WIE International Scholarship 2026",
-      status: "urgent",
-      type: "International scholarship",
-      destination: "Cash award",
-      level: "Undergraduate engineering",
-      covers: "US$2,500 + certificate.",
-      eligibility: "Female. IEEE WIE Student Member for at least second consecutive year. Completed two years of undergrad engineering. GPA \u22653.7/4.0 or equivalent. Mechanical Engineering eligible.",
-      deadline: "8 November 2026 (11:59 PM EDT)",
-      link: "https://wie.ieee.org/grants-scholarships/international-scholarship/",
-      linkLabel: "IEEE WIE International Scholarship",
-      aerospace: "Bridge funding for travel documents, memberships, or internship costs.",
-      next: "Confirm membership duration and GPA. Prepare two-part essay and two recommendation letters."
     },
     {
       id: "carewave",
@@ -115,6 +101,36 @@ window.BOARD = {
       linkLabel: "AIAA scholarships page",
       aerospace: "Direct aerospace society support; Denise Ponchak targets digital avionics.",
       next: "Join AIAA as student member now. Prepare essay and recommendation for the open window. Prioritize Denise Ponchak."
+    },
+    {
+      id: "eaa-post-secondary",
+      name: "EAA Post-Secondary Scholarships 2026-2027",
+      status: "open",
+      type: "International scholarship",
+      destination: "US or Canada (tuition support for aviation-related studies)",
+      level: "Undergraduate or post-secondary in aviation/aerospace fields",
+      covers: "Variable awards for tuition at US/Canada colleges for aerospace engineering, A&P, aviation management, etc.",
+      eligibility: "Min 2.5 GPA. International students eligible if attending or planning to attend a US/Canada program with proper visa/eligibility documentation. Preference for EAA members. One application for all awards.",
+      deadline: "16 December 2026",
+      link: "https://www.eaa.org/eaa/learn-to-fly/scholarships/post-secondary-scholarships",
+      linkLabel: "EAA Post-Secondary Scholarships",
+      aerospace: "Direct funding toward aerospace or aeronautical engineering studies in the US/Canada.",
+      next: "Assess visa pathway if not already studying in US/Canada. Prepare transcript and recommendation. Submit by mid-December."
+    },
+    {
+      id: "sae-aero",
+      name: "SAE Aero Design Competition 2027",
+      status: "open",
+      type: "International team aircraft competition",
+      destination: "Lakeland FL (East) or Van Nuys CA (West)",
+      level: "Undergraduate student teams (Mech/Aerospace eligible)",
+      covers: "Competition participation and recognition. Registration fee applies; travel not funded.",
+      eligibility: "Teams worldwide. International teams welcome. University affiliation required. Registration lottery/open spots until ~30 Nov 2026.",
+      deadline: "Registration closes approximately 30 November 2026",
+      link: "https://www.saeaerodesign.com/",
+      linkLabel: "SAE Aero Design official",
+      aerospace: "Hands-on design, fabrication, and flight of radio-controlled aircraft. Strong practical aerospace engineering experience.",
+      next: "Form or join a team, review rules, and register before the closing window. Monitor for design report deadlines in early 2027."
     },
     {
       id: "aiaa-dbf",
@@ -239,6 +255,21 @@ window.BOARD = {
       next: "Excluded per eligibility filters."
     },
     {
+      id: "ieee-wie",
+      name: "IEEE WIE International Scholarship",
+      status: "excluded",
+      type: "Scholarship",
+      destination: "Cash award",
+      level: "Undergraduate engineering",
+      covers: "US$2,500",
+      eligibility: "Female only. IEEE WIE Student Member for at least second consecutive year. GPA \u22653.7/4.0.",
+      deadline: "8 November 2026",
+      link: "https://wie.ieee.org/grants-scholarships/international-scholarship/",
+      linkLabel: "IEEE WIE International Scholarship",
+      aerospace: "Bridge funding.",
+      next: "Excluded: female-only opportunity does not apply."
+    },
+    {
       id: "mitacs-globalink",
       name: "Mitacs Globalink Research Internship",
       status: "excluded",
@@ -271,7 +302,7 @@ window.BOARD = {
   ],
   nextSteps: [
     { when: "By end of 1 Nov", what: "Submit EPFL E3 application and Open Doors portfolio if not already done." },
-    { when: "By 8\u20139 Nov", what: "Submit IEEE WIE (if eligible) and Carewave applications." },
-    { when: "Ongoing", what: "Apply to KAUST VSRP. Contact IAESTE Nigeria. Join AIAA and prepare Denise Ponchak materials. Keep passport ready. Monitor forecast cycles including SG[Nigeria] and AIAA DBF next year." }
+    { when: "By 9 Nov", what: "Submit Carewave application." },
+    { when: "Ongoing", what: "Apply to KAUST VSRP. Contact IAESTE Nigeria. Join AIAA and prepare Denise Ponchak materials. Assess EAA and SAE Aero Design pathways. Keep passport ready. Monitor forecast cycles including SG[Nigeria] and AIAA DBF next year." }
   ]
 };
