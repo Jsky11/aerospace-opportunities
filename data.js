@@ -1,8 +1,8 @@
 window.BOARD = {
-  updated: "2026-11-02",
+  updated: "2026-11-03",
   timezone: "Africa/Lagos",
   profile: "Nigerian Mechanical Engineering undergraduate, 300 level, aerospace / space focus",
-  summary: "INTERNATIONAL: AIAA scholarships (Denise Ponchak open to non-US) until 31 Jan 2027. KAUST VSRP year-round fully funded. IAESTE ongoing. Faculty outreach peak Oct–Jan. Carewave local closes 9 Nov. Forecasts: GE UK autumn (sponsorship possible but competitive), RAeS May–June, Caltech SURF campus track. Citizenship-restricted (NSF REU, NASA OSTEM, Mitacs, ESA, Australian local-enrolment) and women-only programmes excluded. Only programmes with realistic eligibility path retained.",
+  summary: "INTERNATIONAL: AIAA scholarships (Denise Ponchak open to non-US) until 31 Jan 2027. KAUST VSRP year-round fully funded. IAESTE ongoing. Faculty outreach peak Oct–Jan (highest-probability path). Carewave local closes 8–9 Nov. Forecasts: GE UK autumn (sponsorship possible but competitive), RAeS May–June, Caltech SURF campus track. Citizenship-restricted (NSF REU, NASA OSTEM, Mitacs, ESA, Australian local-enrolment) and women-only programmes excluded. Only programmes with realistic eligibility path retained.",
   stats: { urgent: 1, open: 5, forecast: 4, excluded: 6 },
   deadlines: [
     { date: "2026-11-09", label: "Carewave Aspire closes", hint: "Local ₦500k bridge", status: "urgent" },
