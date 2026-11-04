@@ -1,9 +1,9 @@
 window.BOARD = {
-  updated: "2026-11-03",
+  updated: "2026-11-04",
   timezone: "Africa/Lagos",
   profile: "Nigerian Mechanical Engineering undergraduate, 300 level, aerospace / space focus",
-  summary: "INTERNATIONAL: AIAA scholarships (Denise Ponchak open to non-US) until 31 Jan 2027. KAUST VSRP year-round fully funded. IAESTE ongoing. Faculty outreach peak Oct–Jan (highest-probability path). Carewave local closes 8–9 Nov. Forecasts: GE UK autumn (sponsorship possible but competitive), RAeS May–June, Caltech SURF campus track. Citizenship-restricted (NSF REU, NASA OSTEM, Mitacs, ESA, Australian local-enrolment) and women-only programmes excluded. Only programmes with realistic eligibility path retained.",
-  stats: { urgent: 1, open: 5, forecast: 4, excluded: 6 },
+  summary: "INTERNATIONAL: AIAA scholarships (Denise Ponchak open to non-US) until 31 Jan 2027. KAUST VSRP year-round fully funded. IAESTE ongoing. Faculty outreach peak Oct–Jan (highest-probability path). SAE Aero Design registration closes 30 Nov. EAA scholarships close 16 Dec (US/Canada preference). Carewave local closes 8–9 Nov. Forecasts: GE UK autumn (sponsorship possible but competitive), RAeS May–June, Caltech SURF campus track. Citizenship-restricted (NSF REU, NASA OSTEM, Mitacs, ESA, Australian local-enrolment) and women-only programmes excluded. Only programmes with realistic eligibility path retained.",
+  stats: { urgent: 1, open: 7, forecast: 4, excluded: 6 },
   deadlines: [
     { date: "2026-11-09", label: "Carewave Aspire closes", hint: "Local ₦500k bridge", status: "urgent" },
     { date: "2026-11-30", label: "SAE Aero Design registration closes", hint: "Team competition", status: "open" },
@@ -73,6 +73,36 @@ window.BOARD = {
       next: "Identify 20–40 faculty whose research matches your interests. Send tailored CV + transcript + short research interest email. Start immediately for 2027 summer."
     },
     {
+      id: "sae-aero",
+      name: "SAE Aero Design Competition",
+      status: "open",
+      type: "International team competition",
+      destination: "US (East/West events)",
+      level: "Undergraduate teams (university teams eligible)",
+      covers: "Competition experience; registration fee applies (~$1,850).",
+      eligibility: "University student teams. International teams participate. Strong Mech/Aero design, manufacturing, and testing exposure.",
+      deadline: "Registration closes 30 November 2026",
+      link: "https://www.saeaerodesign.com/",
+      linkLabel: "SAE Aero Design",
+      aerospace: "Hands-on aircraft design, build, and flight competition. Excellent portfolio builder.",
+      next: "Form or join a UNILAG team. Register before 30 November. Prepare design documentation."
+    },
+    {
+      id: "eaa-scholarships",
+      name: "EAA Aviation Foundation Post-Secondary Scholarships",
+      status: "open",
+      type: "International scholarship (study support)",
+      destination: "US/Canada study or flight training",
+      level: "Students aged 16+ pursuing post-secondary aviation-related fields",
+      covers: "Variable awards for tuition or flight training.",
+      eligibility: "Citizens/residents of US/Canada or eligible to study/work there (visa). Preference for EAA members. Minimum 2.5 GPA. Limited direct fit for Nigeria-based student unless planning US/Canada study.",
+      deadline: "16 December 2026",
+      link: "https://eaa.org/eaa/learn-to-fly/Scholarships/post-secondary-scholarships",
+      linkLabel: "EAA Post-Secondary Scholarships",
+      aerospace: "Support for aerospace engineering or aviation studies. Secondary priority given residency preference.",
+      next: "Review if planning future US/Canada study. Join EAA if applying."
+    },
+    {
       id: "carewave",
       name: "Carewave ASPIRE Scholarship Programme (CASP) 2026",
       status: "urgent",
@@ -81,11 +111,11 @@ window.BOARD = {
       level: "Nigerian undergrads at eligible Federal Universities",
       covers: "₦500,000 per year; tuition and living support components reported.",
       eligibility: "Nigerian citizen. Mechanical Engineering explicitly listed. High CGPA and financial need.",
-      deadline: "9 November 2026",
-      link: "https://portal.carewavefoundation.org/",
-      linkLabel: "Carewave portal",
+      deadline: "8–9 November 2026",
+      link: "https://carewavefoundation.org/scholarships/SCH-2026-946543",
+      linkLabel: "Carewave official page",
       aerospace: "Local bridge funding for travel document or internship costs.",
-      next: "Create account and upload required documents before 9 November."
+      next: "Create account and upload required documents before the deadline. Apply today."
     },
     {
       id: "ge-aerospace-uk",
@@ -226,9 +256,9 @@ window.BOARD = {
     }
   ],
   nextSteps: [
-    { when: "Immediate", what: "Join AIAA student membership and prepare materials for 31 Jan scholarship deadline (prioritize Denise Ponchak). Review KAUST VSRP projects and prepare application package." },
-    { when: "By 9 Nov", what: "Submit Carewave ASPIRE application." },
-    { when: "Ongoing / this week", what: "Begin systematic faculty outreach emails for 2027 summer research. Contact IAESTE Nigeria. Keep passport ready." },
+    { when: "Immediate / by 9 Nov", what: "Submit Carewave ASPIRE application today. Join AIAA student membership and prepare materials for 31 Jan scholarship deadline (prioritize Denise Ponchak). Review KAUST VSRP projects and prepare application package." },
+    { when: "This week", what: "Begin systematic faculty outreach emails for 2027 summer research. Contact IAESTE Nigeria. Form or join SAE Aero Design team if interested. Keep passport ready." },
+    { when: "By 30 Nov", what: "Register SAE Aero Design team if pursuing." },
     { when: "Autumn 2027", what: "Monitor GE Aerospace UK placements opening." },
     { when: "May–June 2027", what: "Watch for RAeS Futures Scholarship call." }
   ]
