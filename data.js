@@ -1,5 +1,5 @@
 window.BOARD = {
-  updated: "2026-11-04",
+  updated: "2026-11-05",
   timezone: "Africa/Lagos",
   profile: "Nigerian Mechanical Engineering undergraduate, 300 level, aerospace / space focus",
   summary: "INTERNATIONAL: AIAA scholarships (Denise Ponchak open to non-US) until 31 Jan 2027. KAUST VSRP year-round fully funded. IAESTE ongoing. Faculty outreach peak Oct–Jan (highest-probability path). SAE Aero Design registration closes 30 Nov. EAA scholarships close 16 Dec (US/Canada preference). Carewave local closes 8–9 Nov. Forecasts: GE UK autumn (sponsorship possible but competitive), RAeS May–June, Caltech SURF campus track. Citizenship-restricted (NSF REU, NASA OSTEM, Mitacs, ESA, Australian local-enrolment) and women-only programmes excluded. Only programmes with realistic eligibility path retained.",
@@ -156,7 +156,7 @@ window.BOARD = {
       level: "Undergraduate",
       covers: "Stipend (does not fully cover international travel/housing).",
       eligibility: "International undergrads eligible for campus track (JPL track is US citizens/PR only). Must secure faculty mentor first.",
-      deadline: "Typically opens ~1 Nov, due ~1 Mar. Confirm yearly.",
+      deadline: "Typically opens ~1 Nov, due ~1 Mar / 22 Feb. Confirm yearly.",
       link: "https://sfp.caltech.edu/programs/surf",
       linkLabel: "Caltech SURF",
       aerospace: "High-quality research experience in a top US engineering environment.",
