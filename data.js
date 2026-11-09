@@ -1,8 +1,8 @@
 window.BOARD = {
-  updated: "2026-11-08",
+  updated: "2026-11-09",
   timezone: "Africa/Lagos",
   profile: "Nigerian Mechanical Engineering undergraduate, 300 level, aerospace / space focus",
-  summary: "URGENT: Carewave ASPIRE closes 8–9 Nov (official portal 8 Nov). INTERNATIONAL: AIAA Denise Ponchak open to non-US until 31 Jan 2027. KAUST VSRP year-round fully funded. IAESTE ongoing. Faculty outreach peak Oct–Jan (highest-probability path). SAE Aero Design registration closes 30 Nov. EAA scholarships close 16 Dec (US/Canada preference). Forecasts: GE UK autumn (sponsorship possible but competitive), RAeS May–June 2027, Caltech SURF campus track (mentor required). Citizenship-restricted (NSF REU, NASA OSTEM, Mitacs, ESA, Australian local-enrolment) and women-only programmes excluded.",
+  summary: "URGENT: Carewave ASPIRE closes today 9 Nov (official portal 8 Nov). INTERNATIONAL: AIAA Denise Ponchak open to non-US until 31 Jan 2027. KAUST VSRP year-round fully funded. IAESTE ongoing. Faculty outreach peak Oct–Jan (highest-probability path). SAE Aero Design registration closes 30 Nov. EAA scholarships close 16 Dec (US/Canada preference). Forecasts: GE UK autumn (sponsorship possible but competitive), RAeS May–June 2027, Caltech SURF campus track (mentor required). Citizenship-restricted (NSF REU, NASA OSTEM, Mitacs, ESA, Australian local-enrolment) and women-only programmes excluded.",
   stats: { urgent: 1, open: 6, forecast: 3, excluded: 6 },
   deadlines: [
     { date: "2026-11-09", label: "Carewave Aspire closes", hint: "Local ₦500k bridge — apply today", status: "urgent" },
@@ -202,7 +202,7 @@ window.BOARD = {
       destination: "Christchurch, New Zealand",
       level: "Undergraduate (at least 2 years completed)",
       covers: "Hands-on projects in in-space propulsion and spaceplane programmes.",
-      eligibility: "Nationality/ITAR-style restrictions (Australia, Japan, NZ, Switzerland, EU, NATO preferred). Nigerian nationals face high barrier / effectively no realistic path.",
+      eligibility: "Nationality/ITAR-style restrictions (Australia, Japan, NZ, Switzerland, EU, NATO preferred). Nigerian nationals face high barrier / effectively no realistic eligibility path.",
       deadline: "Typical ~30 June",
       link: "https://dawnaerospace.com/",
       linkLabel: "Dawn Aerospace careers",
