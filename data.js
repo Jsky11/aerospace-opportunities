@@ -1,14 +1,14 @@
 window.BOARD = {
-  updated: "2026-11-09",
+  updated: "2026-11-10",
   timezone: "Africa/Lagos",
   profile: "Nigerian Mechanical Engineering undergraduate, 300 level, aerospace / space focus",
-  summary: "URGENT: Carewave ASPIRE closes today 9 Nov (official portal 8 Nov). INTERNATIONAL: AIAA Denise Ponchak open to non-US until 31 Jan 2027. KAUST VSRP year-round fully funded. IAESTE ongoing. Faculty outreach peak Oct–Jan (highest-probability path). SAE Aero Design registration closes 30 Nov. EAA scholarships close 16 Dec (US/Canada preference). Forecasts: GE UK autumn (sponsorship possible but competitive), RAeS May–June 2027, Caltech SURF campus track (mentor required). Citizenship-restricted (NSF REU, NASA OSTEM, Mitacs, ESA, Australian local-enrolment) and women-only programmes excluded.",
-  stats: { urgent: 1, open: 6, forecast: 3, excluded: 6 },
+  summary: "Carewave ASPIRE closed 9 Nov. INTERNATIONAL: AIAA Denise Ponchak open to non-US until 31 Jan 2027. KAUST VSRP year-round fully funded. IAESTE ongoing. Faculty outreach peak Oct–Jan (highest-probability path). SAE Aero Design registration closes 30 Nov. EAA scholarships close 16 Dec (US/Canada preference). Caltech SURF campus track open (due 22 Feb 2027; mentor required). Forecasts: GE UK autumn (sponsorship possible but competitive), RAeS May–June 2027. Citizenship-restricted (NSF REU, NASA OSTEM, Mitacs, ESA, Australian local-enrolment) and women-only programmes excluded.",
+  stats: { urgent: 0, open: 6, forecast: 4, excluded: 6 },
   deadlines: [
-    { date: "2026-11-09", label: "Carewave Aspire closes", hint: "Local ₦500k bridge — apply today", status: "urgent" },
     { date: "2026-11-30", label: "SAE Aero Design registration closes", hint: "Team competition", status: "open" },
     { date: "2026-12-16", label: "EAA Post-Secondary scholarships close", hint: "US/Canada study support", status: "open" },
     { date: "2027-01-31", label: "AIAA scholarships close", hint: "Denise Ponchak for non-US", status: "open" },
+    { date: "2027-02-22", label: "Caltech SURF applications due", hint: "Campus track; mentor required", status: "open" },
     { date: "2027-05-06", label: "RAeS Futures Scholarship opens (typical)", hint: "Forecast", status: "forecast" }
   ],
   opportunities: [
@@ -88,9 +88,24 @@ window.BOARD = {
       next: "Form or join a UNILAG team. Register before 30 November. Prepare design documentation."
     },
     {
+      id: "caltech-surf",
+      name: "Caltech SURF (Campus track)",
+      status: "open",
+      type: "International summer research",
+      destination: "Pasadena, California (campus track)",
+      level: "Undergraduate",
+      covers: "Stipend (does not fully cover international travel/housing).",
+      eligibility: "International undergrads eligible for campus track (JPL track is US citizens/PR only). Must secure faculty mentor first.",
+      deadline: "Opened 1 November 2026; applications due 22 February 2027",
+      link: "https://sfp.caltech.edu/programs/surf",
+      linkLabel: "Caltech SURF",
+      aerospace: "High-quality research experience in a top US engineering environment.",
+      next: "Secure faculty mentor via outreach. Prepare proposal and materials. Confirm details on official site."
+    },
+    {
       id: "eaa-scholarships",
       name: "EAA Aviation Foundation Post-Secondary Scholarships",
-      status: "open",
+      status: "forecast",
       type: "International scholarship (study support)",
       destination: "US/Canada study or flight training",
       level: "Students aged 16+ pursuing post-secondary aviation-related fields",
@@ -105,17 +120,17 @@ window.BOARD = {
     {
       id: "carewave",
       name: "Carewave ASPIRE Scholarship Programme (CASP) 2026",
-      status: "urgent",
+      status: "forecast",
       type: "Local undergraduate scholarship",
       destination: "Nigeria (cash award)",
       level: "Nigerian undergrads at eligible Federal Universities",
       covers: "₦500,000 per year; tuition and living support components reported.",
       eligibility: "Nigerian citizen. Mechanical Engineering explicitly listed. High CGPA and financial need.",
-      deadline: "8–9 November 2026 (official portal lists 8 Nov)",
+      deadline: "Closed 9 November 2026. Monitor for 2027 cycle",
       link: "https://carewavefoundation.org/scholarships/SCH-2026-946543",
       linkLabel: "Carewave official page",
       aerospace: "Local bridge funding for travel document or internship costs.",
-      next: "Create account and upload required documents before the deadline. Apply today."
+      next: "Monitor for next cycle opening. Useful as bridge funding when available."
     },
     {
       id: "ge-aerospace-uk",
@@ -146,21 +161,6 @@ window.BOARD = {
       linkLabel: "RAeS Scholarships & Bursaries",
       aerospace: "Direct support for aerospace employability activities (internships, training, projects).",
       next: "Join RAeS student membership. Monitor for 2027 opening in May."
-    },
-    {
-      id: "caltech-surf",
-      name: "Caltech SURF (Campus track)",
-      status: "forecast",
-      type: "International summer research",
-      destination: "Pasadena, California (campus track)",
-      level: "Undergraduate",
-      covers: "Stipend (does not fully cover international travel/housing).",
-      eligibility: "International undergrads eligible for campus track (JPL track is US citizens/PR only). Must secure faculty mentor first.",
-      deadline: "Typically opens ~1 Nov, due ~1 Mar / 22 Feb. Confirm yearly.",
-      link: "https://sfp.caltech.edu/programs/surf",
-      linkLabel: "Caltech SURF",
-      aerospace: "High-quality research experience in a top US engineering environment.",
-      next: "Start faculty mentor outreach early (Oct–Jan). Confirm 2027 dates on official site."
     }
   ],
   excluded: [
@@ -256,8 +256,8 @@ window.BOARD = {
     }
   ],
   nextSteps: [
-    { when: "Immediate / by 9 Nov", what: "Submit Carewave ASPIRE application today (official portal lists 8 Nov). Join AIAA student membership and prepare materials for 31 Jan scholarship deadline (prioritize Denise Ponchak). Review KAUST VSRP projects and prepare application package." },
-    { when: "This week", what: "Begin systematic faculty outreach emails for 2027 summer research. Contact IAESTE Nigeria. Form or join SAE Aero Design team if interested. Keep passport ready." },
+    { when: "Immediate", what: "Join AIAA student membership and prepare materials for 31 Jan scholarship deadline (prioritize Denise Ponchak). Review KAUST VSRP projects and prepare application package. Begin systematic faculty outreach for 2027 summer." },
+    { when: "This week", what: "Contact IAESTE Nigeria. Form or join SAE Aero Design team if interested. Keep passport ready. Secure Caltech mentor if pursuing SURF." },
     { when: "By 30 Nov", what: "Register SAE Aero Design team if pursuing." },
     { when: "Autumn 2027", what: "Monitor GE Aerospace UK placements opening." },
     { when: "May–June 2027", what: "Watch for RAeS Futures Scholarship call." }
