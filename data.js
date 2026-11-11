@@ -1,8 +1,8 @@
 window.BOARD = {
-  updated: "2026-11-10",
+  updated: "2026-11-11",
   timezone: "Africa/Lagos",
   profile: "Nigerian Mechanical Engineering undergraduate, 300 level, aerospace / space focus",
-  summary: "Carewave ASPIRE closed 9 Nov. INTERNATIONAL: AIAA Denise Ponchak open to non-US until 31 Jan 2027. KAUST VSRP year-round fully funded. IAESTE ongoing. Faculty outreach peak Oct–Jan (highest-probability path). SAE Aero Design registration closes 30 Nov. EAA scholarships close 16 Dec (US/Canada preference). Caltech SURF campus track open (due 22 Feb 2027; mentor required). Forecasts: GE UK autumn (sponsorship possible but competitive), RAeS May–June 2027. Citizenship-restricted (NSF REU, NASA OSTEM, Mitacs, ESA, Australian local-enrolment) and women-only programmes excluded.",
+  summary: "No ultra-urgent closings in next 30-45 days. INTERNATIONAL: AIAA Denise Ponchak open to non-US until 31 Jan 2027. KAUST VSRP year-round fully funded. IAESTE ongoing. Faculty outreach peak Oct–Jan (highest-probability path). SAE Aero Design registration closes 30 Nov. EAA scholarships close 16 Dec (US/Canada preference). Caltech SURF campus track open (due 22 Feb 2027; mentor required). Forecasts: GE UK autumn (sponsorship possible but competitive), RAeS May–June 2027. Citizenship-restricted (NSF REU, NASA OSTEM, Mitacs, ESA, Australian local-enrolment) and women-only programmes excluded.",
   stats: { urgent: 0, open: 6, forecast: 4, excluded: 6 },
   deadlines: [
     { date: "2026-11-30", label: "SAE Aero Design registration closes", hint: "Team competition", status: "open" },
