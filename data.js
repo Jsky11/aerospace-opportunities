@@ -1,8 +1,8 @@
 window.BOARD = {
-  updated: "2026-11-12",
+  updated: "2026-11-13",
   timezone: "Africa/Lagos",
   profile: "Nigerian Mechanical Engineering undergraduate, 300 level, aerospace / space focus",
-  summary: "URGENT: SAE Aero Design registration closes 30 Nov 2026 (18 days). EAA scholarships close 16 Dec (US/Canada preference). INTERNATIONAL: AIAA Denise Ponchak open to non-US until 31 Jan 2027. KAUST VSRP year-round fully funded. IAESTE ongoing. Faculty outreach peak Oct–Jan (highest-probability path). RAeS Light Aircraft Design Competition open (deadline 31 Aug 2027). Caltech SURF campus track open (due ~22 Feb 2027; mentor required). Forecasts: GE UK autumn (sponsorship possible but competitive), RAeS Futures May–June 2027. Citizenship-restricted (NSF REU, NASA OSTEM, Mitacs, ESA, Australian local-enrolment) and women-only programmes excluded.",
+  summary: "URGENT: SAE Aero Design registration closes 30 Nov 2026 (17 days). EAA scholarships close 16 Dec (US/Canada preference). INTERNATIONAL: AIAA Denise Ponchak open to non-US until 31 Jan 2027. KAUST VSRP year-round fully funded. IAESTE ongoing. Faculty outreach peak Oct–Jan (highest-probability path). RAeS Light Aircraft Design Competition open (deadline 31 Aug 2027). Caltech SURF campus track open (due ~22 Feb 2027; mentor required). Forecasts: GE UK autumn (sponsorship possible but competitive), RAeS Futures May–June 2027. Citizenship-restricted (NSF REU, NASA OSTEM, Mitacs, ESA, Australian local-enrolment) and women-only programmes excluded.",
   stats: { urgent: 1, open: 7, forecast: 3, excluded: 6 },
   deadlines: [
     { date: "2026-11-30", label: "SAE Aero Design registration closes", hint: "URGENT — Team competition", status: "urgent" },
@@ -80,7 +80,7 @@ window.BOARD = {
       type: "International team competition",
       destination: "US (East/West events)",
       level: "Undergraduate teams (university teams eligible)",
-      covers: "Competition experience; registration fee applies (~$1,650).",
+      covers: "Competition experience; registration fee applies (~$1,650–1,850).",
       eligibility: "University student teams. International teams participate. Strong Mech/Aero design, manufacturing, and testing exposure.",
       deadline: "Registration closes 30 November 2026",
       link: "https://www.saeaerodesign.com/",
@@ -156,7 +156,7 @@ window.BOARD = {
       destination: "UK (Cheltenham, Gloucester, other sites)",
       level: "Undergraduate engineering students returning to studies",
       covers: "Paid placement (competitive salary); pathway to graduate roles.",
-      eligibility: "Aerospace, Mechanical, related engineering. Applications from those requiring sponsorship considered, but preference for candidates with existing UK right to work. Competitive.",
+      eligibility: "Aerospace, Mechanical, related engineering. Applications from those requiring sponsorship considered, but preference for candidates with existing UK right to work. Competitive. Some FAQs note sponsorship not available for Early Careers.",
       deadline: "Autumn open; typically close end of October. Next cycle expected autumn 2027",
       link: "https://careers.geaerospace.com/global/en/uk-placements",
       linkLabel: "GE Aerospace UK Placements",
