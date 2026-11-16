@@ -1,9 +1,9 @@
 window.BOARD = {
-  updated: "2026-11-15",
+  updated: "2026-11-16",
   timezone: "Africa/Lagos",
   profile: "Nigerian Mechanical Engineering undergraduate, 300 level, aerospace / space focus",
-  summary: "URGENT: SAE Aero Design registration closes 30 Nov 2026 (15 days). EAA scholarships close 16 Dec (US/Canada preference). INTERNATIONAL: AIAA Denise Ponchak open to non-US until 31 Jan 2027. KAUST VSRP year-round fully funded. IAESTE ongoing. Faculty outreach peak Oct–Jan (highest-probability path). RAeS Light Aircraft Design Competition open (deadline 31 Aug 2027). Caltech SURF campus track open (due ~22 Feb 2027; mentor required). Forecasts: GE UK autumn (sponsorship possible but competitive), RAeS Futures May–June 2027, Dawn Aerospace NZ ~30 June (nationality barriers). Citizenship-restricted (NSF REU, NASA OSTEM, Mitacs, ESA, Australian local-enrolment) and women-only programmes excluded.",
-  stats: { urgent: 1, open: 7, forecast: 4, excluded: 5 },
+  summary: "URGENT: SAE Aero Design registration closes 30 Nov 2026 (14 days). EAA scholarships close 16 Dec (US/Canada preference). INTERNATIONAL: AIAA Denise Ponchak open to non-US until 31 Jan 2027. KAUST VSRP year-round fully funded. IAESTE ongoing. Faculty outreach peak Oct–Jan (highest-probability path). RAeS Light Aircraft Design Competition open (deadline 31 Aug 2027). Caltech SURF campus track open (due 22 Feb 2027; mentor required). Forecasts: GE UK autumn (sponsorship possible but competitive), RAeS Futures May–June 2027, Dawn Aerospace NZ ~30 June (nationality barriers), EPFL E3 next cycle ~Oct 2027. Citizenship-restricted (NSF REU, NASA OSTEM, Mitacs, ESA, Australian local-enrolment) and women-only programmes excluded.",
+  stats: { urgent: 1, open: 7, forecast: 5, excluded: 5 },
   deadlines: [
     { date: "2026-11-30", label: "SAE Aero Design registration closes", hint: "URGENT — Team competition", status: "urgent" },
     { date: "2026-12-16", label: "EAA Post-Secondary scholarships close", hint: "US/Canada study support", status: "open" },
@@ -193,6 +193,21 @@ window.BOARD = {
       linkLabel: "Dawn Aerospace careers",
       aerospace: "Direct work on propulsion and spaceplane systems.",
       next: "Monitor careers page. Apply only if eligibility confirmed and strong portfolio."
+    },
+    {
+      id: "epfl-e3",
+      name: "EPFL E3 Excellence in Engineering",
+      status: "forecast",
+      type: "International summer research",
+      destination: "EPFL, Switzerland",
+      level: "Bachelor (after 2nd year) and Master’s in engineering/science",
+      covers: "Travel costs refunded on request + monthly living allowance. 8–12 weeks.",
+      eligibility: "All nationalities. Open to international students. Completed at least second year of Bachelor.",
+      deadline: "2027 cycle closed 1 November 2026. Next expected ~October 2027 for summer 2028",
+      link: "https://eee.epfl.ch/",
+      linkLabel: "EPFL E3",
+      aerospace: "Research in mechanical and aerospace-adjacent labs possible. Strong research experience.",
+      next: "Monitor official site for next cycle opening. Strong academic record required."
     }
   ],
   excluded: [
