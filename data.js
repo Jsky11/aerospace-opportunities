@@ -1,11 +1,12 @@
 window.BOARD = {
-  updated: "2026-11-18",
+  updated: "2026-11-19",
   timezone: "Africa/Lagos",
   profile: "Nigerian Mechanical Engineering undergraduate, 300 level, aerospace / space focus",
-  summary: "URGENT: SAE Aero Design registration closes 30 Nov 2026 (12 days). EAA scholarships close 16 Dec (US/Canada preference). INTERNATIONAL: AIAA Denise Ponchak open to non-US until 31 Jan 2027. KAUST VSRP year-round fully funded. IAESTE ongoing. Faculty outreach peak Oct–Jan (highest-probability path). RAeS Light Aircraft Design Competition open (deadline 31 Aug 2027). Caltech SURF campus track open (due 22 Feb 2027; mentor required). Forecasts: GE UK autumn (sponsorship possible but competitive), RAeS Futures May–June 2027, Dawn Aerospace NZ ~30 June (nationality barriers), EPFL E3 next cycle ~Oct 2027. Citizenship-restricted (NSF REU, NASA OSTEM, Mitacs, ESA, Australian local-enrolment) and women-only programmes excluded.",
-  stats: { urgent: 1, open: 7, forecast: 5, excluded: 5 },
+  summary: "URGENT: SAE Aero Design registration closes 30 Nov 2026 (11 days). EAA scholarships close 16 Dec (US/Canada preference). IIT Hyderabad MAEstro closes 10 Dec (final-year, top 20%). INTERNATIONAL: AIAA Denise Ponchak open to non-US until 31 Jan 2027. KAUST VSRP year-round fully funded. IAESTE ongoing. Faculty outreach peak Oct–Jan (highest-probability path). RAeS Light Aircraft Design Competition open (deadline 31 Aug 2027). Caltech SURF campus track open (due 22 Feb 2027; mentor required). Forecasts: GE UK autumn (sponsorship possible but competitive), RAeS Futures May–June 2027, Dawn Aerospace NZ ~30 June (nationality barriers), EPFL E3 next cycle ~Oct 2027. Citizenship-restricted (NSF REU, NASA OSTEM, Mitacs, ESA, Australian local-enrolment) and women-only programmes excluded.",
+  stats: { urgent: 1, open: 8, forecast: 5, excluded: 5 },
   deadlines: [
     { date: "2026-11-30", label: "SAE Aero Design registration closes", hint: "URGENT — Team competition", status: "urgent" },
+    { date: "2026-12-10", label: "IIT Hyderabad MAEstro closes", hint: "Final-year residential research", status: "open" },
     { date: "2026-12-16", label: "EAA Post-Secondary scholarships close", hint: "US/Canada study support", status: "open" },
     { date: "2027-01-31", label: "AIAA scholarships close", hint: "Denise Ponchak for non-US", status: "open" },
     { date: "2027-02-22", label: "Caltech SURF applications due", hint: "Campus track; mentor required", status: "open" },
@@ -118,6 +119,21 @@ window.BOARD = {
       linkLabel: "RAeS Light Aircraft Design Competition",
       aerospace: "Hands-on conceptual aircraft design experience. Strong portfolio evidence for Mech/Aero skills.",
       next: "Register interest on official page. Begin conceptual design work. Suitable as individual or UNILAG team project."
+    },
+    {
+      id: "iith-maestro",
+      name: "IIT Hyderabad MAEstro (Mechanical & Aerospace Engineering Student Research Opportunity)",
+      status: "open",
+      type: "International research internship",
+      destination: "Hyderabad, India (IIT Hyderabad campus)",
+      level: "Final-year BE/B.Tech (non-IITH) in Mechanical, Aerospace, Production, Robotics, Mechatronics",
+      covers: "₹7,000 monthly fellowship + hostel accommodation (mess charges borne by intern). Semester-long from 18 Jan 2027.",
+      eligibility: "Final-year students outside IITH. Top 20% of program (certified by Head of Institution). Full-time residential.",
+      deadline: "10 December 2026",
+      link: "https://mae.iith.ac.in/maestro.html",
+      linkLabel: "IIT Hyderabad MAEstro",
+      aerospace: "Research exposure in CFD, drone technology, digital twins, metamaterials and related aerospace/mechanical topics.",
+      next: "Confirm final-year and top-20% eligibility. Prepare NoC and CV. Apply via official form before 10 Dec."
     },
     {
       id: "eaa-scholarships",
@@ -288,9 +304,10 @@ window.BOARD = {
     }
   ],
   nextSteps: [
-    { when: "Immediate", what: "Join AIAA student membership and prepare materials for 31 Jan scholarship deadline (prioritize Denise Ponchak). Review KAUST VSRP projects and prepare application package. Begin systematic faculty outreach for 2027 summer." },
+    { when: "Immediate", what: "Join AIAA student membership and prepare materials for 31 Jan scholarship deadline (prioritize Denise Ponchak). Review KAUST VSRP projects and prepare application package. Begin systematic faculty outreach for 2027 summer. Check IIT Hyderabad MAEstro eligibility." },
     { when: "This week", what: "Contact IAESTE Nigeria. Form or join SAE Aero Design team if interested. Keep passport ready. Secure Caltech mentor if pursuing SURF. Register interest in RAeS Light Aircraft Design Competition." },
     { when: "By 30 Nov", what: "Register SAE Aero Design team if pursuing." },
+    { when: "By 10 Dec", what: "Apply to IIT Hyderabad MAEstro if final-year and top-20% eligible." },
     { when: "Autumn 2027", what: "Monitor GE Aerospace UK placements opening." },
     { when: "May–June 2027", what: "Watch for RAeS Futures Scholarship call. Monitor Dawn Aerospace for summer internships (confirm eligibility)." }
   ]
