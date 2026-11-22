@@ -1,8 +1,8 @@
 window.BOARD = {
-  updated: "2026-11-21",
+  updated: "2026-11-22",
   timezone: "Africa/Lagos",
   profile: "Nigerian Mechanical Engineering undergraduate, 300 level, aerospace / space focus",
-  summary: "URGENT: SAE Aero Design registration closes 30 Nov 2026 (9 days). EAA scholarships close 16 Dec (US/Canada preference). IIT Hyderabad MAEstro closes 10 Dec (final-year, top 20%). INTERNATIONAL: AIAA Denise Ponchak open to non-US until 31 Jan 2027. KAUST VSRP year-round fully funded. IAESTE ongoing. Faculty outreach peak Oct–Jan (highest-probability path). RAeS Light Aircraft Design Competition open (deadline 31 Aug 2027). Caltech SURF campus track open (due 22 Feb 2027; mentor required). Forecasts: GE UK autumn (sponsorship possible but competitive), RAeS Futures May–June 2027, Dawn Aerospace NZ ~30 June (nationality barriers), EPFL E3 next cycle ~Oct 2027. Citizenship-restricted (NSF REU, NASA OSTEM, Mitacs, ESA, Australian local-enrolment) and women-only programmes excluded.",
+  summary: "URGENT: SAE Aero Design registration closes 30 Nov 2026 (8 days). EAA scholarships close 16 Dec (US/Canada preference). IIT Hyderabad MAEstro closes 10 Dec (final-year, top 20% — limited current fit). INTERNATIONAL: AIAA Denise Ponchak open to non-US until 31 Jan 2027. KAUST VSRP year-round fully funded. IAESTE ongoing. Faculty outreach peak Oct–Jan (highest-probability path). RAeS Light Aircraft Design Competition open (deadline 31 Aug 2027). Caltech SURF campus track open (due 22 Feb 2027; mentor required). Forecasts: GE UK autumn (sponsorship possible but competitive), RAeS Futures May–June 2027, Dawn Aerospace NZ ~30 June (nationality barriers), EPFL E3 next cycle ~Oct 2027. Citizenship-restricted (NSF REU, NASA OSTEM, Mitacs, ESA, Australian local-enrolment) and women-only programmes excluded.",
   stats: { urgent: 1, open: 8, forecast: 5, excluded: 5 },
   deadlines: [
     { date: "2026-11-30", label: "SAE Aero Design registration closes", hint: "URGENT — Team competition", status: "urgent" },
@@ -304,8 +304,8 @@ window.BOARD = {
     }
   ],
   nextSteps: [
-    { when: "Immediate", what: "Join AIAA student membership and prepare materials for 31 Jan scholarship window. Email IAESTE Nigeria. Begin faculty outreach list of 20–40 targeted labs." },
-    { when: "This week", what: "Decide on SAE Aero Design team registration before 30 Nov. Confirm IIT Hyderabad MAEstro eligibility if final-year." },
-    { when: "Ongoing", what: "Apply to KAUST VSRP projects as they appear. Monitor Carewave and other bridge funding. Build CAD/CFD/structures portfolio." }
+    { when: "Immediate (by 30 Nov)", what: "Form or join UNILAG SAE Aero Design team and register if feasible. Hands-on portfolio builder." },
+    { when: "This week", what: "Join AIAA student membership. Begin or intensify faculty outreach emails for summer 2027 research slots (peak window)." },
+    { when: "Ongoing", what: "Apply to matching KAUST VSRP projects. Contact IAESTE Nigeria. Register interest for RAeS Light Aircraft Design Competition. Monitor GE UK and Dawn Aerospace for next cycles with eligibility notes." }
   ]
 };
