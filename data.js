@@ -1,15 +1,16 @@
 window.BOARD = {
-  updated: "2026-11-25",
+  updated: "2026-11-26",
   timezone: "Africa/Lagos",
   profile: "Nigerian Mechanical Engineering undergraduate, 300 level, aerospace / space focus",
-  summary: "URGENT: SAE Aero Design registration closes 30 Nov 2026 (5 days). EAA scholarships close 16 Dec (US/Canada preference). IIT Hyderabad MAEstro closes 10 Dec (final-year, top 20% — limited current fit for 300-level). INTERNATIONAL: AIAA Denise Ponchak open to non-US until 31 Jan 2027. KAUST VSRP year-round fully funded. IAESTE ongoing. Faculty outreach peak Oct–Jan (highest-probability path). RAeS Light Aircraft Design Competition open (deadline 31 Aug 2027). Caltech SURF campus track open (due 22 Feb 2027; mentor required). Forecasts: GE UK autumn (sponsorship possible but competitive), RAeS Futures May–June 2027, Dawn Aerospace NZ ~30 June (nationality barriers), EPFL E3 next cycle ~Oct 2027. Citizenship-restricted (NSF REU, NASA OSTEM, Mitacs, ESA, Australian local-enrolment) and women-only programmes excluded.",
-  stats: { urgent: 1, open: 8, forecast: 5, excluded: 5 },
+  summary: "URGENT: SAE Aero Design registration closes 30 Nov 2026 (4 days). EAA scholarships close 16 Dec (US/Canada preference). IIT Hyderabad MAEstro closes 10 Dec (final-year, top 20% — limited current fit for 300-level). INTERNATIONAL: AIAA Denise Ponchak open to non-US until 31 Jan 2027. KAUST VSRP year-round fully funded. IAESTE ongoing. Faculty outreach peak Oct–Jan (highest-probability path). RAeS Light Aircraft Design Competition open (deadline 31 Aug 2027). Caltech SURF campus track open (due 22 Feb 2027; mentor required). UCSD CEER self-funded REU open to internationals (due 15 Mar 2027). Forecasts: GE UK autumn (sponsorship possible but competitive), RAeS Futures May–June 2027, Dawn Aerospace NZ ~30 June (nationality barriers), EPFL E3 next cycle ~Oct 2027. Citizenship-restricted (NSF REU, NASA OSTEM, Mitacs, ESA, Australian local-enrolment) and women-only programmes excluded.",
+  stats: { urgent: 1, open: 9, forecast: 5, excluded: 5 },
   deadlines: [
     { date: "2026-11-30", label: "SAE Aero Design registration closes", hint: "URGENT — Team competition", status: "urgent" },
     { date: "2026-12-10", label: "IIT Hyderabad MAEstro closes", hint: "Final-year residential research", status: "open" },
     { date: "2026-12-16", label: "EAA Post-Secondary scholarships close", hint: "US/Canada study support", status: "open" },
     { date: "2027-01-31", label: "AIAA scholarships close", hint: "Denise Ponchak for non-US", status: "open" },
     { date: "2027-02-22", label: "Caltech SURF applications due", hint: "Campus track; mentor required", status: "open" },
+    { date: "2027-03-15", label: "UCSD CEER Summer REU closes", hint: "Self-funded; open to internationals", status: "open" },
     { date: "2027-05-06", label: "RAeS Futures Scholarship opens (typical)", hint: "Forecast", status: "forecast" },
     { date: "2027-06-30", label: "Dawn Aerospace NZ internships typical close", hint: "Forecast; check nationality", status: "forecast" },
     { date: "2027-08-31", label: "RAeS Light Aircraft Design Competition entry deadline", hint: "Conceptual design competition", status: "open" }
@@ -119,6 +120,21 @@ window.BOARD = {
       linkLabel: "RAeS Light Aircraft Design Competition",
       aerospace: "Hands-on conceptual aircraft design experience. Strong portfolio evidence for Mech/Aero skills.",
       next: "Register interest on official page. Begin conceptual design work. Suitable as individual or UNILAG team project."
+    },
+    {
+      id: "ucsd-ceer",
+      name: "UCSD CEER Summer REU (self-funded)",
+      status: "open",
+      type: "International summer research",
+      destination: "UC San Diego, California",
+      level: "Undergraduate (at least one year completed) in STEM",
+      covers: "Research experience; program fee ~$6,000 (student responsible for housing).",
+      eligibility: "Open to domestic and international undergraduate students. GPA ≥3.0 preferred. Self-funded.",
+      deadline: "15 March 2027 (rolling admissions)",
+      link: "https://armor.ucsd.edu/apply/ceer-summer-reu",
+      linkLabel: "UCSD CEER Summer REU",
+      aerospace: "Structures, extreme events, and multidisciplinary research bridge for mechanical/aerospace skills.",
+      next: "Review projects. Prepare transcript, CV, and application. Arrange funding for fee and housing if selected."
     },
     {
       id: "iith-maestro",
@@ -306,6 +322,6 @@ window.BOARD = {
   nextSteps: [
     { when: "Immediate (by 30 Nov)", what: "Form or join UNILAG SAE Aero Design team and register if feasible. Hands-on portfolio builder." },
     { when: "This week", what: "Join AIAA student membership. Begin or intensify faculty outreach emails for summer 2027 research slots (peak window)." },
-    { when: "Ongoing", what: "Apply to matching KAUST VSRP projects. Contact IAESTE Nigeria. Register interest for RAeS Light Aircraft Design Competition. Monitor GE UK and Dawn Aerospace for next cycles with eligibility notes." }
+    { when: "Ongoing", what: "Apply to matching KAUST VSRP projects. Contact IAESTE Nigeria. Register interest for RAeS Light Aircraft Design Competition. Review UCSD CEER if self-funding is feasible. Monitor GE UK and Dawn Aerospace for next cycles with eligibility notes." }
   ]
 };
