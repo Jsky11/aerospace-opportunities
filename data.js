@@ -1,8 +1,8 @@
 window.BOARD = {
-  updated: "2026-11-27",
+  updated: "2026-11-28",
   timezone: "Africa/Lagos",
   profile: "Nigerian Mechanical Engineering undergraduate, 300 level, aerospace / space focus",
-  summary: "URGENT: SAE Aero Design registration closes 30 Nov 2026 (3 days). EAA scholarships close 16 Dec (US/Canada preference). IIT Hyderabad MAEstro closes 10 Dec (final-year, top 20% — limited current fit for 300-level). INTERNATIONAL: AIAA Denise Ponchak open to non-US until 31 Jan 2027. KAUST VSRP year-round fully funded. IAESTE ongoing. Faculty outreach peak Oct–Jan (highest-probability path). RAeS Light Aircraft Design Competition open (deadline 31 Aug 2027). Caltech SURF campus track open (due 22 Feb 2027; mentor required). UCSD CEER self-funded REU open to internationals (due 15 Mar 2027). Forecasts: GE UK autumn (sponsorship possible but competitive), RAeS Futures May–June 2027, Dawn Aerospace NZ ~30 June (nationality barriers), EPFL E3 next cycle ~Oct 2027. Citizenship-restricted (NSF REU, NASA OSTEM, Mitacs, ESA, Australian local-enrolment) and women-only programmes excluded.",
+  summary: "URGENT: SAE Aero Design registration closes 30 Nov 2026 (2 days). EAA scholarships close 16 Dec (US/Canada preference). IIT Hyderabad MAEstro closes 10 Dec (final-year, top 20% — limited current fit for 300-level). INTERNATIONAL: AIAA Denise Ponchak open to non-US until 31 Jan 2027. KAUST VSRP year-round fully funded. IAESTE ongoing. Faculty outreach peak Oct–Jan (highest-probability path). RAeS Light Aircraft Design Competition open (deadline 31 Aug 2027). Caltech SURF campus track open (due 22 Feb 2027; mentor required). UCSD CEER self-funded REU open to internationals (due 15 Mar 2027). Forecasts: GE UK autumn (sponsorship possible but competitive), RAeS Futures May–June 2027, Dawn Aerospace NZ ~30 June (nationality barriers), EPFL E3 next cycle ~Oct 2027. Citizenship-restricted (NSF REU, NASA OSTEM, Mitacs, ESA, Australian local-enrolment) and women-only programmes excluded.",
   stats: { urgent: 1, open: 9, forecast: 5, excluded: 5 },
   deadlines: [
     { date: "2026-11-30", label: "SAE Aero Design registration closes", hint: "URGENT — Team competition", status: "urgent" },
@@ -297,31 +297,34 @@ window.BOARD = {
       level: "Undergraduate",
       covers: "Stipend + travel",
       eligibility: "Nigeria is not a partner country.",
-      deadline: "Varies",
-      link: "https://www.mitacs.ca/en/programs/globalink",
+      deadline: "Typically",
+      link: "https://www.mitacs.ca/en/programs/globalink/globalink-research-internship",
       linkLabel: "Mitacs Globalink",
       aerospace: "Research experience.",
-      next: "Excluded — Nigeria not a partner country."
+      next: "Excluded — Nigeria not partner."
     },
     {
-      id: "australian-vacation",
-      name: "Australian University Vacation Research Programs (e.g. CSIRO)",
+      id: "australian-local",
+      name: "Australian university vacation / CSIRO programmes",
       status: "excluded",
       type: "Research internship",
       destination: "Australia",
       level: "Undergraduate",
-      covers: "Stipend",
-      eligibility: "Enrollment at Australian institution + full work rights required.",
+      covers: "Varies",
+      eligibility: "Require enrollment at an Australian institution + full work rights.",
       deadline: "Varies",
       link: "https://www.csiro.au/",
       linkLabel: "CSIRO",
-      aerospace: "Space research projects.",
-      next: "Excluded — requires Australian enrolment and work rights."
+      aerospace: "Space and engineering research when eligible.",
+      next: "Excluded — no realistic path for external Nigerian student."
     }
   ],
   nextSteps: [
-    { when: "Immediate (by 30 Nov)", what: "Form or join UNILAG SAE Aero Design team and register if feasible. Hands-on portfolio builder." },
-    { when: "This week", what: "Join AIAA student membership. Begin or intensify faculty outreach emails for summer 2027 research slots (peak window)." },
-    { when: "Ongoing", what: "Apply to matching KAUST VSRP projects. Contact IAESTE Nigeria. Register interest for RAeS Light Aircraft Design Competition. Review UCSD CEER if self-funding is feasible. Monitor GE UK and Dawn Aerospace for next cycles with eligibility notes." }
+    "URGENT: Register SAE Aero Design before 30 Nov 2026 if not already done.",
+    "Continuous: Send 20–40 targeted faculty outreach emails (peak Oct–Jan).",
+    "Join AIAA student membership and prepare Denise Ponchak application (closes 31 Jan 2027).",
+    "Monitor IAESTE offers and KAUST project portal; apply to matching projects.",
+    "Begin RAeS Light Aircraft Design Competition conceptual work (deadline 31 Aug 2027).",
+    "Monitor local bridge funding (Carewave next cycle) for passport/visa costs."
   ]
 };
